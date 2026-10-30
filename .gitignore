@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+.env*
+.claude/settings.local.json
+
+# Working notes stay on the owner's machine, out of this public repo.
+/SPEC.md
+/STATE.md
+/LEARNINGS.md
+/CLAUDE.md

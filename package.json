@@ -1,0 +1,42 @@
+{
+  "name": "funkdle",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Wordle-style daily guessing game built on Fallout 4 junk items.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.node.json",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run lint && npm run test",
+    "data:fetch": "tsx scripts/data-fetch.ts",
+    "data:build": "tsx scripts/data-build.ts",
+    "data:audit": "tsx scripts/data-audit.ts",
+    "data:simulate": "tsx scripts/simulate.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.19.2",
+    "cheerio": "1.2.0",
+    "domhandler": "5.0.3",
+    "eslint": "10.13.0",
+    "eslint-config-prettier": "10.1.8",
+    "globals": "17.13.0",
+    "prettier": "3.9.10",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "8.3.5",
+    "vitest": "5.0.5",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "sources": {
+    "nukapedia": {
+      "role": "primary",
+      "title": "Fallout 4 junk items",
+      "url": "https://fallout.fandom.com/wiki/Fallout_4_junk_items",
+      "apiUrl": "https://fallout.fandom.com/api.php?action=parse&page=Fallout_4_junk_items&prop=text%7Crevid&redirects=1&format=json",
+      "finalUrl": "https://fallout.fandom.com/api.php?action=parse&page=Fallout_4_junk_items&prop=text%7Crevid&redirects=1&format=json",
+      "revisionId": 4734145,
+      "retrievedAt": "2026-10-30T13:30:37.928Z",
+      "file": "nukapedia.html",
+      "sha256": "c59cdcc7a379aa9cdce8472aa4627956f4491040dd9674e439fe01fac98b448d",
+      "bytes": 380087
+    },
+    "fallout-wiki": {
+      "role": "cross-check",
+      "title": "Fallout 4 Junk Items",
+      "url": "https://fallout.wiki/wiki/Fallout_4_junk_items",
+      "apiUrl": "https://fallout.wiki/api.php?action=parse&page=Fallout_4_junk_items&prop=text%7Crevid&redirects=1&format=json",
+      "finalUrl": "https://fallout.wiki/api.php?action=parse&page=Fallout_4_junk_items&prop=text%7Crevid&redirects=1&format=json",
+      "revisionId": 5486503,
+      "retrievedAt": "2026-10-30T13:30:41.366Z",
+      "file": "fallout-wiki.html",
+      "sha256": "b0824cd56a23c00fb16ab389537d7dca9f9079c759761994a8ab03984833aa29",
+      "bytes": 599535
+    }
+  }
+}

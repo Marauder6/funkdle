@@ -1,0 +1,7 @@
+# LF everywhere, whatever core.autocrlf says, so Prettier's check and byte-identical data builds
+# agree between the Windows dev machines and CI.
+* text=auto eol=lf
+
+# Raw wiki snapshots are kept byte-for-byte as served (fallout-wiki.html contains CRs);
+# metadata.json records their sha256 and data:build checks it.
+pipeline/raw/*.html -text

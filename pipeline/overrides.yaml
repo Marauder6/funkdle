@@ -1,0 +1,31 @@
+# Manual corrections to the wiki snapshot (SPEC 5.3). data:build applies these; never hand-edit
+# data/items.json.
+#
+# exclude: drop a row.            { name, section?, reason }
+# fix:     change one field.      { name, section?, field: name|value|weight|components, from, to, reason }
+#
+# `name` and `section` match the wiki row exactly. `section` is required when the name appears in
+# more than one section. A fix's `from` must equal the snapshot's current text, so a fix that no
+# longer matches fails the build. Components are written "Steel x2, Screw x1".
+
+exclude:
+  - name: Black Ice
+    section: Far Harbor
+    reason: >-
+      The wiki lists "Black Ice" as its own only component: it does not scrap into any of the 31
+      components. SPEC 5.3 names it as a no-components row.
+  - name: Code
+    section: Far Harbor
+    reason: >-
+      The wiki lists "Code" as its own only component: it does not scrap into any of the 31
+      components. SPEC 5.3 names it as a no-components row.
+  - name: Modified bowling ball schematic
+    section: Far Harbor
+    reason: >-
+      A quest schematic, not junk; SPEC 5.3 excludes schematic items. The wiki gives it value 0,
+      weight 0 and Cloth x1.
+  - name: Map of the Commonwealth
+    section: Creation Club/Creations
+    reason: Value and weight are blank on the wiki.
+
+fix: []

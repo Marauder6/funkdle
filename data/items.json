@@ -1,0 +1,9233 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "title": "Fallout 4 junk items",
+    "url": "https://fallout.fandom.com/wiki/Fallout_4_junk_items",
+    "revisionId": 4734145,
+    "retrievedAt": "2026-10-30T13:30:37.928Z"
+  },
+  "generatedAt": "2026-10-30T13:30:37.928Z",
+  "items": [
+    {
+      "id": "10lb-weight",
+      "name": "10lb weight",
+      "value": 2,
+      "weight": 10,
+      "components": {
+        "Lead": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "001CC0F1"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "160lb-dumbbell",
+      "name": "160lb dumbbell",
+      "value": 30,
+      "weight": 160,
+      "components": {
+        "Lead": 40
+      },
+      "totalComponents": 40,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0023C85E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "20lb-dumbbell",
+      "name": "20lb dumbbell",
+      "value": 5,
+      "weight": 20,
+      "components": {
+        "Lead": 9
+      },
+      "totalComponents": 9,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0023C85C"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "25lb-weight",
+      "name": "25lb weight",
+      "value": 4,
+      "weight": 25,
+      "components": {
+        "Lead": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "001CC0F3"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "40lb-barbell",
+      "name": "40lb barbell",
+      "value": 7,
+      "weight": 40,
+      "components": {
+        "Lead": 10
+      },
+      "totalComponents": 10,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0023C85F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "5lb-weight",
+      "name": "5lb weight",
+      "value": 1,
+      "weight": 5,
+      "components": {
+        "Lead": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "001CC0F0"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "80lb-barbell",
+      "name": "80lb barbell",
+      "value": 15,
+      "weight": 80,
+      "components": {
+        "Lead": 20
+      },
+      "totalComponents": 20,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0023C85D"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "80lb-curlbar",
+      "name": "80lb curlbar",
+      "value": 15,
+      "weight": 80,
+      "components": {
+        "Lead": 20
+      },
+      "totalComponents": 20,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0023C860"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "abraxo-cleaner",
+      "name": "Abraxo cleaner",
+      "value": 5,
+      "weight": 1,
+      "components": {
+        "Acid": 1,
+        "Antiseptic": 2,
+        "Fiberglass": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00059A71"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "abraxo-cleaner-industrial-grade",
+      "name": "Abraxo cleaner industrial grade",
+      "value": 15,
+      "weight": 1,
+      "components": {
+        "Acid": 2,
+        "Antiseptic": 4,
+        "Fiberglass": 2
+      },
+      "totalComponents": 8,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "001C9E96"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "adjustable-wrench",
+      "name": "Adjustable wrench",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Gears": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0004D1F5"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "alarm-clock",
+      "name": "Alarm clock",
+      "value": 10,
+      "weight": 1,
+      "components": {
+        "Aluminum": 2,
+        "Glass": 1,
+        "Nuclear material": 1,
+        "Spring": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 4,
+      "origin": "base",
+      "formIds": [
+        "00059B27"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "aluminum-can",
+      "name": "Aluminum can",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Aluminum": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0001F908"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "aluminum-canister",
+      "name": "Aluminum canister",
+      "value": 12,
+      "weight": 3,
+      "components": {
+        "Aluminum": 2,
+        "Fiberglass": 2,
+        "Oil": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00176054"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "aluminum-oil-can",
+      "name": "Aluminum oil can",
+      "value": 12,
+      "weight": 0.5,
+      "components": {
+        "Oil": 2,
+        "Steel": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000FCE33"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "aluminum-tray",
+      "name": "Aluminum tray",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0016D8CA"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "amontillado-bottle",
+      "name": "Amontillado bottle",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Glass": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "001BEAEE"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "anchorage-veterans-flag",
+      "name": "Anchorage veteran's flag",
+      "value": 20,
+      "weight": 3,
+      "components": {
+        "Cloth": 4,
+        "Wood": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0014DD36"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "angler-gunk",
+      "name": "Angler gunk",
+      "value": 0,
+      "weight": 0.5,
+      "components": {
+        "Adhesive": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx0540FE"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "annikas-locket",
+      "name": "Annika's locket",
+      "value": 24,
+      "weight": 0.1,
+      "components": {
+        "Silver": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00101048"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "anti-freeze-bottle",
+      "name": "Anti freeze bottle",
+      "value": 4,
+      "weight": 2,
+      "components": {
+        "Acid": 2,
+        "Plastic": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00060E73"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "antique-globe",
+      "name": "Antique globe",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Cork": 2,
+        "Plastic": 2,
+        "Screw": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0001D975"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "antique-pocket-watch",
+      "name": "Antique pocket watch",
+      "value": 111,
+      "weight": 0.5,
+      "components": {
+        "Gears": 2,
+        "Silver": 2,
+        "Spring": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0014DDFC"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "antique-silver-locket",
+      "name": "Antique silver locket",
+      "value": 60,
+      "weight": 0.1,
+      "components": {
+        "Silver": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0014DE00"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "antique-table-knife",
+      "name": "Antique table knife",
+      "value": 3,
+      "weight": 0.1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00140B2F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "applicator",
+      "name": "Applicator",
+      "value": 12,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 1,
+        "Fiber optics": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00166B2C"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "ashtray",
+      "name": "Ashtray",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0008E370"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "assaultron-circuit-board",
+      "name": "Assaultron circuit board",
+      "value": 100,
+      "weight": 2,
+      "components": {
+        "Circuitry": 5,
+        "Silver": 2
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0022D0F6"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "baby-bottle",
+      "name": "Baby bottle",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2,
+        "Rubber": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0009B4BA"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "baby-rattle",
+      "name": "Baby rattle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059A75",
+        "FEXXX057"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "bag-of-cement",
+      "name": "Bag of cement",
+      "value": 15,
+      "weight": 8,
+      "components": {
+        "Concrete": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00098148"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "bag-of-fertilizer",
+      "name": "Bag of fertilizer",
+      "value": 25,
+      "weight": 4,
+      "components": {
+        "Acid": 1,
+        "Fertilizer": 4
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0005A0D9"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "ball-peen-hammer",
+      "name": "Ball-peen hammer",
+      "value": 3,
+      "weight": 1.5,
+      "components": {
+        "Steel": 2,
+        "Wood": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0004D1F3"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "bandage-scissors",
+      "name": "Bandage scissors",
+      "value": 3,
+      "weight": 0.25,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000C9AD7"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "baseball",
+      "name": "Baseball",
+      "value": 4,
+      "weight": 0.5,
+      "components": {
+        "Cork": 2,
+        "Leather": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059A76"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "baseball-base",
+      "name": "Baseball base",
+      "value": 4,
+      "weight": 3,
+      "components": {
+        "Cloth": 2,
+        "Plastic": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059A78"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "baseball-glove",
+      "name": "Baseball glove",
+      "value": 4,
+      "weight": 1,
+      "components": {
+        "Leather": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059A77"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "basketball",
+      "name": "Basketball",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Rubber": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DF264",
+        "xx0503B2"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "battered-clipboard",
+      "name": "Battered clipboard",
+      "value": 1,
+      "weight": 0.2,
+      "components": {
+        "Spring": 1,
+        "Wood": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0001F92F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "beaker",
+      "name": "Beaker",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B17"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "beaker-stand",
+      "name": "Beaker stand",
+      "value": 4,
+      "weight": 0.5,
+      "components": {
+        "Copper": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000EC8B6"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "beer-bottle",
+      "name": "Beer bottle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000211DD"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "biometric-scanner",
+      "name": "Biometric scanner",
+      "value": 20,
+      "weight": 3,
+      "components": {
+        "Asbestos": 1,
+        "Fiber optics": 1,
+        "Nuclear material": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00154AD3"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "blacksmith-hammer",
+      "name": "Blacksmith hammer",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Steel": 2,
+        "Wood": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001A0B13"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "blast-radius-board-game",
+      "name": "Blast Radius board game",
+      "value": 21,
+      "weight": 1,
+      "components": {
+        "Nuclear material": 1,
+        "Wood": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0006B165",
+        "xx000835",
+        "FEXXX058"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "bloatfly-gland",
+      "name": "Bloatfly gland",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Acid": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0002C59E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "blood-can",
+      "name": "Blood can",
+      "value": 10,
+      "weight": 5,
+      "components": {
+        "Oil": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0022750C"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "blood-sac",
+      "name": "Blood sac",
+      "value": 4,
+      "weight": 0.5,
+      "components": {
+        "Antiseptic": 2,
+        "Fiberglass": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00028A63"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "bloodbug-proboscis",
+      "name": "Bloodbug proboscis",
+      "value": 10,
+      "weight": 0.2,
+      "components": {
+        "Acid": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00028668"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "blowtorch",
+      "name": "Blowtorch",
+      "value": 15,
+      "weight": 3,
+      "components": {
+        "Oil": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0011DA0F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "blue-paint",
+      "name": "Blue paint",
+      "value": 10,
+      "weight": 5,
+      "components": {
+        "Oil": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0001D95A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "blue-table-lamp",
+      "name": "Blue table lamp",
+      "value": 5,
+      "weight": 3,
+      "components": {
+        "Copper": 1,
+        "Glass": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0003F8C0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "bond",
+      "name": "Bond",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx045E25"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "bone-cutter",
+      "name": "Bone cutter",
+      "value": 8,
+      "weight": 3,
+      "components": {
+        "Copper": 1,
+        "Gears": 2,
+        "Plastic": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "000C9ADE"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "bonesaw",
+      "name": "Bonesaw",
+      "value": 5,
+      "weight": 1.5,
+      "components": {
+        "Rubber": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B40"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "boston-bugle",
+      "name": "Boston Bugle",
+      "value": 2,
+      "weight": 0.1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0001A4B9"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "bourbon",
+      "name": "Bourbon",
+      "value": 4,
+      "weight": 1,
+      "components": {
+        "Glass": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DEDD9"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "bourbon-bottle",
+      "name": "Bourbon bottle",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Glass": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DEDDF"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "bowl",
+      "name": "Bowl",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00140B1A"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "bowling-ball",
+      "name": "Bowling ball",
+      "value": 5,
+      "weight": 8,
+      "components": {
+        "Plastic": 7
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DF265"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "bowling-pin",
+      "name": "Bowling pin",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Plastic": 2,
+        "Wood": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000DF266"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "box-of-san-francisco-sunlights",
+      "name": "Box of San Francisco Sunlights",
+      "value": 40,
+      "weight": 0.5,
+      "components": {
+        "Cloth": 3,
+        "Wood": 2
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00159F0D"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "brahmin-hide",
+      "name": "Brahmin hide",
+      "value": 8,
+      "weight": 2,
+      "components": {
+        "Leather": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0022B623"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "brahmin-skull",
+      "name": "Brahmin skull",
+      "value": 2,
+      "weight": 3,
+      "components": {
+        "Bone": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B0C"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "bread-box",
+      "name": "Bread box",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Plastic": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00046A86",
+        "FEXXX0F5"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "broken-femur",
+      "name": "Broken femur",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188C9A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "broken-lamp",
+      "name": "Broken lamp",
+      "value": 5,
+      "weight": 3,
+      "components": {
+        "Copper": 1,
+        "Glass": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0007830A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "broken-light-bulb",
+      "name": "Broken light bulb",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Copper": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000342BA"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "broken-tibia",
+      "name": "Broken tibia",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188C9B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "broom",
+      "name": "Broom",
+      "value": 2,
+      "weight": 3,
+      "components": {
+        "Plastic": 1,
+        "Wood": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0005238F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "brotherhood-of-steel-holotag",
+      "name": "Brotherhood of Steel holotag",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000BDA4F"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "brown-bottle",
+      "name": "Brown bottle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DF222"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "bunsen-burner",
+      "name": "Bunsen burner",
+      "value": 10,
+      "weight": 1,
+      "components": {
+        "Copper": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000EC8B8"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "burger-tray",
+      "name": "Burger tray",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02A188"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "burgundy-bottle",
+      "name": "Burgundy bottle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DF24D"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cafeteria-tray",
+      "name": "Cafeteria tray",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059A82"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cake-pan",
+      "name": "Cake pan",
+      "value": 5,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0001A333"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "camera",
+      "name": "Camera",
+      "value": 12,
+      "weight": 3,
+      "components": {
+        "Crystal": 2,
+        "Gears": 2,
+        "Spring": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00059A83"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "can",
+      "name": "Can",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0001F909"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "capless-skull",
+      "name": "Capless skull",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Bone": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188CA3"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "carlisle-typewriter",
+      "name": "Carlisle typewriter",
+      "value": 20,
+      "weight": 5,
+      "components": {
+        "Aluminum": 2,
+        "Gears": 6,
+        "Screw": 4,
+        "Spring": 5
+      },
+      "totalComponents": 17,
+      "uniqueComponents": 4,
+      "origin": "base",
+      "formIds": [
+        "001C88E7"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "cat-bowl",
+      "name": "Cat bowl",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00101CB9"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cat-remains",
+      "name": "Cat remains",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Bone": 2,
+        "Ceramic": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx045E97",
+        "xx045E99",
+        "xx045E9B",
+        "xx045E9D",
+        "xx045EA6",
+        "xx045EA8",
+        "xx045EAA"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "cauterizer",
+      "name": "Cauterizer",
+      "value": 19,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 1,
+        "Nuclear material": 1,
+        "Spring": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00166B2D"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "ceramic-bowl",
+      "name": "Ceramic bowl",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00023C32"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "chalk",
+      "name": "Chalk",
+      "value": 2,
+      "weight": 0,
+      "components": {
+        "Asbestos": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00140D98"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "championship-bowling-ball",
+      "name": "Championship bowling ball",
+      "value": 21,
+      "weight": 8,
+      "components": {
+        "Plastic": 7
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0014DD34"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "championship-bowling-pin",
+      "name": "Championship bowling pin",
+      "value": 10,
+      "weight": 3,
+      "components": {
+        "Plastic": 2,
+        "Wood": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0014DD32"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "charge-card",
+      "name": "Charge card",
+      "value": 1,
+      "weight": 0,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00084AAC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "chemistry-jar",
+      "name": "Chemistry jar",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00176052"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "chessboard",
+      "name": "Chessboard",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AB4"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cigar",
+      "name": "Cigar",
+      "value": 1,
+      "weight": 0,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0008E36F"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cigar-box",
+      "name": "Cigar box",
+      "value": 40,
+      "weight": 0.5,
+      "components": {
+        "Cloth": 3,
+        "Fiberglass": 1,
+        "Wood": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0005821E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "cigarette",
+      "name": "Cigarette",
+      "value": 1,
+      "weight": 0,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AB5"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cigarette-carton",
+      "name": "Cigarette carton",
+      "value": 50,
+      "weight": 1,
+      "components": {
+        "Asbestos": 2,
+        "Cloth": 4,
+        "Plastic": 2
+      },
+      "totalComponents": 8,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0005821C"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "classroom-globe",
+      "name": "Classroom globe",
+      "value": 28,
+      "weight": 3,
+      "components": {
+        "Cork": 2,
+        "Plastic": 2,
+        "Screw": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0014DD40"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "claw-hammer",
+      "name": "Claw hammer",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Steel": 2,
+        "Wood": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001A0B14"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "clean-bowl",
+      "name": "Clean bowl",
+      "value": 3,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00140B31",
+        "FEXXX0F0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "clean-broom",
+      "name": "Clean broom",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Plastic": 1,
+        "Wood": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000E376A"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "clean-cake-pan",
+      "name": "Clean cake pan",
+      "value": 7,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0001A32F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "clean-coffee-cup",
+      "name": "Clean coffee cup",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00171947"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "clean-coffee-tin",
+      "name": "Clean coffee tin",
+      "value": 6,
+      "weight": 1,
+      "components": {
+        "Aluminum": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00020191"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "clean-dog-bowl",
+      "name": "Clean dog bowl",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E3772"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "clean-drinking-glass",
+      "name": "Clean drinking glass",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00140B24"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "clean-globe",
+      "name": "Clean globe",
+      "value": 5,
+      "weight": 3,
+      "components": {
+        "Cork": 2,
+        "Plastic": 2,
+        "Screw": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "001A7DA5"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "clean-pepper-mill",
+      "name": "Clean pepper mill",
+      "value": 4,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 1,
+        "Screw": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00020184"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "clean-red-plate",
+      "name": "Clean red plate",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0015CDF6"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "clean-salt-shaker",
+      "name": "Clean salt shaker",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00020183"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "clean-tea-kettle",
+      "name": "Clean tea kettle",
+      "value": 2,
+      "weight": 1.5,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00020196"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "clean-umbrella",
+      "name": "Clean umbrella",
+      "value": 5,
+      "weight": 1.5,
+      "components": {
+        "Plastic": 2,
+        "Spring": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000BA2FD"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "clean-umbrella-stand",
+      "name": "Clean umbrella stand",
+      "value": 14,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000BA3F8"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "clean-white-plate",
+      "name": "Clean white plate",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0015CDF5"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "clipboard",
+      "name": "Clipboard",
+      "value": 3,
+      "weight": 0.2,
+      "components": {
+        "Spring": 2,
+        "Wood": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0022579F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "clothes-hanger",
+      "name": "Clothes hanger",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "001BE890"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "clothing-iron",
+      "name": "Clothing iron",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Plastic": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059ADE",
+        "FEXXX0F4"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "coffee-cup",
+      "name": "Coffee cup",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000211C4",
+        "xx010135"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "coffee-pot",
+      "name": "Coffee pot",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Asbestos": 1,
+        "Plastic": 1,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "000211CC"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "coffee-tin",
+      "name": "Coffee tin",
+      "value": 3,
+      "weight": 1,
+      "components": {
+        "Aluminum": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00020194"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "collander",
+      "name": "Collander",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0011DA11"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "collectible-baseball",
+      "name": "Collectible baseball",
+      "value": 8,
+      "weight": 0.5,
+      "components": {
+        "Cork": 2,
+        "Leather": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000E3764"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "colonial-vase",
+      "name": "Colonial vase",
+      "value": 14,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0014DDFB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "combination-wrench",
+      "name": "Combination wrench",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0004D1F6"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "comfy-pillow",
+      "name": "Comfy pillow",
+      "value": 3,
+      "weight": 1,
+      "components": {
+        "Cloth": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060EC8"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "condensed-fog",
+      "name": "Condensed fog",
+      "value": 10,
+      "weight": 3,
+      "components": {
+        "Oil": 1,
+        "Steel": 3
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx03A2D1"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "condenser-power-module",
+      "name": "Condenser power module",
+      "value": 30,
+      "weight": 2,
+      "components": {
+        "Circuitry": 5,
+        "Copper": 2,
+        "Steel": 1
+      },
+      "totalComponents": 8,
+      "uniqueComponents": 3,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx023B23"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "connecting-rod",
+      "name": "Connecting rod",
+      "value": 2,
+      "weight": 5,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E1FF7"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cooking-oil",
+      "name": "Cooking oil",
+      "value": 4,
+      "weight": 0.5,
+      "components": {
+        "Oil": 3,
+        "Plastic": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00061FA7"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "cooking-pan",
+      "name": "Cooking pan",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AEC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cooking-pot",
+      "name": "Cooking pot",
+      "value": 4,
+      "weight": 0.5,
+      "components": {
+        "Copper": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059ABA"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "coolant",
+      "name": "Coolant",
+      "value": 7,
+      "weight": 1,
+      "components": {
+        "Acid": 2,
+        "Plastic": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000C437F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "coolant-cap",
+      "name": "Coolant cap",
+      "value": 5,
+      "weight": 1,
+      "components": {
+        "Aluminum": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E1FF0"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "copper-bar",
+      "name": "Copper bar",
+      "value": 200,
+      "weight": 0.5,
+      "components": {
+        "Copper": 10
+      },
+      "totalComponents": 10,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00100E19"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "cotton-yarn",
+      "name": "Cotton yarn",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060EC0"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "covered-sauce-pan",
+      "name": "Covered sauce pan",
+      "value": 2,
+      "weight": 1.5,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0003D3A8",
+        "FEXXX0EF"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cracked-bowl",
+      "name": "Cracked bowl",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00023C34"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cracked-deathclaw-egg",
+      "name": "Cracked deathclaw egg",
+      "value": 5,
+      "weight": 0.1,
+      "components": {
+        "Acid": 1,
+        "Bone": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0014F6AC"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "cracked-glass-bowl",
+      "name": "Cracked glass bowl",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00023C38"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "crystal-liquor-decanter",
+      "name": "Crystal liquor decanter",
+      "value": 18,
+      "weight": 3,
+      "components": {
+        "Cork": 1,
+        "Crystal": 4
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00060E82"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "cue-ball",
+      "name": "Cue ball",
+      "value": 3,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AFC"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "cutting-board",
+      "name": "Cutting board",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059ABC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "cutting-fluid",
+      "name": "Cutting fluid",
+      "value": 7,
+      "weight": 1,
+      "components": {
+        "Oil": 3,
+        "Steel": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000657FB"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "danses-holotags",
+      "name": "Danse's holotags",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000D10AB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "dawnshire-vase",
+      "name": "Dawnshire vase",
+      "value": 14,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0014DDF7"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "deathclaw-hand",
+      "name": "Deathclaw hand",
+      "value": 25,
+      "weight": 5,
+      "components": {
+        "Bone": 2,
+        "Leather": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0002EF67"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "deathclaw-hide",
+      "name": "Deathclaw hide",
+      "value": 15,
+      "weight": 8,
+      "components": {
+        "Leather": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00034604"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "deflated-kickball",
+      "name": "Deflated kickball",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Rubber": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0002D9AC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "derby-winning-toy-car",
+      "name": "Derby-winning toy car",
+      "value": 16,
+      "weight": 1,
+      "components": {
+        "Screw": 1,
+        "Wood": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0014DD23"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "desk-fan",
+      "name": "Desk fan",
+      "value": 4,
+      "weight": 3,
+      "components": {
+        "Gears": 2,
+        "Screw": 2,
+        "Steel": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0001F905"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "desktop-picture-frame",
+      "name": "Desktop picture frame",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "001A89A2",
+        "xx000B6C"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "dinner-fork",
+      "name": "Dinner fork",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060E93"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "dinner-plate",
+      "name": "Dinner plate",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060E90"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "dirty-ashtray",
+      "name": "Dirty ashtray",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0008E371"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "dishrag",
+      "name": "Dishrag",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000A4920"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "distress-pulser",
+      "name": "Distress pulser",
+      "value": 5,
+      "weight": 1,
+      "components": {
+        "Aluminum": 2,
+        "Circuitry": 1,
+        "Nuclear material": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "000BA073"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "dog-bowl",
+      "name": "Dog bowl",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059A7E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "dog-tags",
+      "name": "Dog tags",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060EBF"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "drinking-glass",
+      "name": "Drinking glass",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00140B22",
+        "0023CD67",
+        "0023CD68",
+        "xx01012D"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "duct-tape",
+      "name": "Duct tape",
+      "value": 12,
+      "weight": 0.1,
+      "components": {
+        "Adhesive": 1,
+        "Cloth": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0004D1F2"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "ear-examiner",
+      "name": "Ear examiner",
+      "value": 15,
+      "weight": 0.75,
+      "components": {
+        "Aluminum": 1,
+        "Fiber optics": 1,
+        "Glass": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0013FF44"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "economy-wonderglue",
+      "name": "Economy wonderglue",
+      "value": 40,
+      "weight": 0.75,
+      "components": {
+        "Adhesive": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0006C5AE"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "eight-ball",
+      "name": "Eight ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AFE"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "eleven-ball",
+      "name": "Eleven ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4E9"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-blood-pack",
+      "name": "Empty blood pack",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0014242A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-blood-sac",
+      "name": "Empty blood sac",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Antiseptic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00028A64"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "empty-can",
+      "name": "Empty can",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0016D8C9"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-coolant",
+      "name": "Empty coolant",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000C4380"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-floral-barrel-vase",
+      "name": "Empty floral barrel vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AFE"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-floral-bud-vase",
+      "name": "Empty floral bud vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AFD"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-floral-flared-vase",
+      "name": "Empty floral flared vase",
+      "value": 1,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AF3"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-floral-rounded-vase",
+      "name": "Empty floral rounded vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AF0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-floral-vaulted-vase",
+      "name": "Empty floral vaulted vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AFB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-milk-bottle",
+      "name": "Empty milk bottle",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0003B55B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-paint-can",
+      "name": "Empty paint can",
+      "value": 5,
+      "weight": 0.5,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B3A"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "empty-teal-barrel-vase",
+      "name": "Empty teal barrel vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061ABC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-teal-bud-vase",
+      "name": "Empty teal bud vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061ABB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-teal-flared-vase",
+      "name": "Empty teal flared vase",
+      "value": 1,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AB5"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-teal-rounded-vase",
+      "name": "Empty teal rounded vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AB1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-teal-vaulted-vase",
+      "name": "Empty teal vaulted vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AB6"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-willow-barrel-vase",
+      "name": "Empty willow barrel vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AE1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-willow-bud-vase",
+      "name": "Empty willow bud vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AE0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-willow-flared-vase",
+      "name": "Empty willow flared vase",
+      "value": 1,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061ADE"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-willow-rounded-vase",
+      "name": "Empty willow rounded vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061AD0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "empty-willow-vaulted-vase",
+      "name": "Empty willow vaulted vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00061ADF"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "enamel-bucket",
+      "name": "Enamel bucket",
+      "value": 2,
+      "weight": 3,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0006D140"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "enhanced-targeting-card",
+      "name": "Enhanced targeting card",
+      "value": 9,
+      "weight": 0.25,
+      "components": {
+        "Circuitry": 2,
+        "Plastic": 1,
+        "Silver": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "000E7E71"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "extinguisher",
+      "name": "Extinguisher",
+      "value": 6,
+      "weight": 6,
+      "components": {
+        "Asbestos": 2,
+        "Rubber": 2,
+        "Steel": 4
+      },
+      "totalComponents": 8,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0001F8F9"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "fancy-hairbrush",
+      "name": "Fancy hairbrush",
+      "value": 9,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 1,
+        "Silver": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00060ECD"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "feather-duster",
+      "name": "Feather duster",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Cloth": 1,
+        "Plastic": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00196AB9"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "femur",
+      "name": "Femur",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188C99"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "fifteen-ball",
+      "name": "Fifteen ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4F1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "fishing-rod",
+      "name": "Fishing rod",
+      "value": 4,
+      "weight": 3,
+      "components": {
+        "Gears": 2,
+        "Spring": 1,
+        "Wood": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00059B36"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "five-ball",
+      "name": "Five ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4DE"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "flask",
+      "name": "Flask",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000EC8AD"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "flight-data-recorder",
+      "name": "Flight data recorder",
+      "value": 17,
+      "weight": 3,
+      "components": {
+        "Circuitry": 1,
+        "Copper": 1,
+        "Fiber optics": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0013A3E0"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "flip-lighter",
+      "name": "Flip lighter",
+      "value": 12,
+      "weight": 0.5,
+      "components": {
+        "Oil": 1,
+        "Spring": 1,
+        "Steel": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00058224"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "floral-barrel-vase",
+      "name": "Floral barrel vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8E3"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "floral-bud-vase",
+      "name": "Floral bud vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8E1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "floral-flared-vase",
+      "name": "Floral flared vase",
+      "value": 1,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8D9"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "floral-rounded-vase",
+      "name": "Floral rounded vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8CF"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "floral-vaulted-vase",
+      "name": "Floral vaulted vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8E0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "fork",
+      "name": "Fork",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00140B29"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "four-ball",
+      "name": "Four ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4D5"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "fourteen-ball",
+      "name": "Fourteen ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4EF"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "frying-pan",
+      "name": "Frying pan",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0003D3A5",
+        "FEXXX113"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "fumigus-blowtorch",
+      "name": "Fumigus blowtorch",
+      "value": 25,
+      "weight": 3,
+      "components": {
+        "Oil": 3,
+        "Steel": 3
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001C7F2B"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "fuse",
+      "name": "Fuse",
+      "value": 5,
+      "weight": 0.1,
+      "components": {
+        "Copper": 1,
+        "Glass": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059ACC"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "garden-gnome",
+      "name": "Garden gnome",
+      "value": 3,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx019E16",
+        "xx019E17",
+        "xx019E18"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "gas-canister",
+      "name": "Gas canister",
+      "value": 10,
+      "weight": 3,
+      "components": {
+        "Oil": 1,
+        "Steel": 3
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B33"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "gatorclaw-hand",
+      "name": "Gatorclaw hand",
+      "value": 150,
+      "weight": 5,
+      "components": {
+        "Bone": 2,
+        "Leather": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx04AA19"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "gatorclaw-hide",
+      "name": "Gatorclaw hide",
+      "value": 100,
+      "weight": 8,
+      "components": {
+        "Leather": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx04AA16"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "gazelle-hide",
+      "name": "Gazelle hide",
+      "value": 75,
+      "weight": 1,
+      "components": {
+        "Leather": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx04B41A"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "gear",
+      "name": "Gear",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E1FF9"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "giddyup-buttercup",
+      "name": "Giddyup Buttercup",
+      "value": 177,
+      "weight": 8,
+      "components": {
+        "Gears": 3,
+        "Screw": 4,
+        "Spring": 4,
+        "Steel": 5
+      },
+      "totalComponents": 16,
+      "uniqueComponents": 4,
+      "origin": "base",
+      "formIds": [
+        "00163A12"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "giddyup-buttercup-back-leg",
+      "name": "Giddyup Buttercup back leg",
+      "value": 69,
+      "weight": 1,
+      "components": {
+        "Gears": 2,
+        "Spring": 2,
+        "Steel": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00163A15"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "giddyup-buttercup-body",
+      "name": "Giddyup Buttercup body",
+      "value": 60,
+      "weight": 3,
+      "components": {
+        "Screw": 2,
+        "Spring": 2,
+        "Steel": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00163A16"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "giddyup-buttercup-front-leg",
+      "name": "Giddyup Buttercup front leg",
+      "value": 69,
+      "weight": 1,
+      "components": {
+        "Gears": 2,
+        "Spring": 2,
+        "Steel": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00163A14"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "giddyup-buttercup-head",
+      "name": "Giddyup Buttercup head",
+      "value": 36,
+      "weight": 3,
+      "components": {
+        "Spring": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00163A13"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "giddyup-buttercup-toy-parts",
+      "name": "Giddyup Buttercup toy parts",
+      "value": 45,
+      "weight": 1,
+      "components": {
+        "Plastic": 1,
+        "Spring": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00031AAF"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "gilded-grasshopper",
+      "name": "Gilded grasshopper",
+      "value": 451,
+      "weight": 2,
+      "components": {
+        "Copper": 10,
+        "Glass": 2,
+        "Gold": 5
+      },
+      "totalComponents": 17,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00147D5E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "glass-barrel-red-vase",
+      "name": "Glass barrel red vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0005E1B1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-barrel-teal-vase",
+      "name": "Glass barrel teal vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0005E1B6"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-barrel-vase",
+      "name": "Glass barrel vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488B8"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-bowl",
+      "name": "Glass bowl",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00023C36"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "glass-bud-red-vase",
+      "name": "Glass bud red vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0005E1B0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-bud-teal-vase",
+      "name": "Glass bud teal vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0005E1B5"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-bud-vase",
+      "name": "Glass bud vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488BC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-flared-red-vase",
+      "name": "Glass flared red vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0005E1AE"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-flared-teal-vase",
+      "name": "Glass flared teal vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0005E1B3"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-flared-vase",
+      "name": "Glass flared vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488B9"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-pitcher",
+      "name": "Glass pitcher",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Glass": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AD1"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "glass-rounded-red-vase",
+      "name": "Glass rounded red vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0005E1AD"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-rounded-teal-vase",
+      "name": "Glass rounded teal vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0005E1B2"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-rounded-vase",
+      "name": "Glass rounded vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488CC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-vaulted-red-vase",
+      "name": "Glass vaulted red vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0005E1AF"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-vaulted-teal-vase",
+      "name": "Glass vaulted teal vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0005E1B4"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "glass-vaulted-vase",
+      "name": "Glass vaulted vase",
+      "value": 26,
+      "weight": 3,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488BA"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "globe",
+      "name": "Globe",
+      "value": 2,
+      "weight": 3,
+      "components": {
+        "Cork": 2,
+        "Plastic": 2,
+        "Screw": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "001A7DA6"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "gold-bar",
+      "name": "Gold bar",
+      "value": 450,
+      "weight": 0.5,
+      "components": {
+        "Gold": 10
+      },
+      "totalComponents": 10,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00100E1E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "gold-plated-flip-lighter",
+      "name": "Gold plated flip lighter",
+      "value": 26,
+      "weight": 0.5,
+      "components": {
+        "Gold": 1,
+        "Oil": 1,
+        "Steel": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00060E88"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "gold-watch",
+      "name": "Gold watch",
+      "value": 40,
+      "weight": 0.5,
+      "components": {
+        "Gears": 2,
+        "Gold": 2,
+        "Spring": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00060E7C"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "graduated-cylinder",
+      "name": "Graduated cylinder",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00176050"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "gwinnett-ale-bottle",
+      "name": "Gwinnett ale bottle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0011EA9E"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "gwinnett-brew-bottle",
+      "name": "Gwinnett brew bottle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0011EA9B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "gwinnett-lager-bottle",
+      "name": "Gwinnett lager bottle",
+      "value": 3,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0011EA9C"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "gwinnett-pale-ale-bottle",
+      "name": "Gwinnett pale ale bottle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0011EA9D"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "gwinnett-pilsner-bottle",
+      "name": "Gwinnett pilsner bottle",
+      "value": 3,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0011EAA0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "gwinnett-stout-bottle",
+      "name": "Gwinnett stout bottle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0011EA9F"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "hack-saw",
+      "name": "Hack saw",
+      "value": 3,
+      "weight": 2,
+      "components": {
+        "Steel": 2,
+        "Wood": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00173F01"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "hairbrush",
+      "name": "Hairbrush",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060ECC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "hallucigen-gas-canister",
+      "name": "HalluciGen gas canister",
+      "value": 35,
+      "weight": 3,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E69AF"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "hammer",
+      "name": "Hammer",
+      "value": 5,
+      "weight": 1.5,
+      "components": {
+        "Steel": 2,
+        "Wood": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001A4AB0"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "handcuffs",
+      "name": "Handcuffs",
+      "value": 6,
+      "weight": 0.5,
+      "components": {
+        "Screw": 1,
+        "Spring": 1,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00059B3F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "hide-bundle",
+      "name": "Hide bundle",
+      "value": 35,
+      "weight": 0.5,
+      "components": {
+        "Leather": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx040DF0"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "high-powered-magnet",
+      "name": "High-powered magnet",
+      "value": 13,
+      "weight": 5,
+      "components": {
+        "Ceramic": 1,
+        "Copper": 3,
+        "Nuclear material": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "001AB88D"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "high-powered-microscope",
+      "name": "High-powered microscope",
+      "value": 22,
+      "weight": 5,
+      "components": {
+        "Crystal": 2,
+        "Fiber optics": 1,
+        "Gears": 2,
+        "Glass": 2
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 4,
+      "origin": "base",
+      "formIds": [
+        "001C61C3"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "hoe",
+      "name": "Hoe",
+      "value": 3,
+      "weight": 5,
+      "components": {
+        "Steel": 3,
+        "Wood": 3
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000AF88F"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "home-plate",
+      "name": "Home plate",
+      "value": 4,
+      "weight": 3,
+      "components": {
+        "Cloth": 2,
+        "Plastic": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0001A4BA"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "hot-dog-tray",
+      "name": "Hot dog tray",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02A189"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "hot-plate",
+      "name": "Hot plate",
+      "value": 7,
+      "weight": 3,
+      "components": {
+        "Circuitry": 2,
+        "Copper": 1,
+        "Screw": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00059ADB"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "hubcap",
+      "name": "Hubcap",
+      "value": 5,
+      "weight": 3,
+      "components": {
+        "Aluminum": 2,
+        "Screw": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0007E941"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "human-jaw",
+      "name": "Human jaw",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188CA0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "ichor-sac",
+      "name": "Ichor sac",
+      "value": 15,
+      "weight": 0.5,
+      "components": {
+        "Acid": 2,
+        "Nuclear material": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00028A62"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "inactive-distress-pulser",
+      "name": "Inactive distress pulser",
+      "value": 5,
+      "weight": 1,
+      "components": {
+        "Aluminum": 2,
+        "Circuitry": 1,
+        "Nuclear material": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00140C3B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "industrial-oil-canister",
+      "name": "Industrial oil canister",
+      "value": 14,
+      "weight": 3,
+      "components": {
+        "Aluminum": 2,
+        "Oil": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001AB5EE"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "industrial-size-shortening",
+      "name": "Industrial size shortening",
+      "value": 20,
+      "weight": 4,
+      "components": {
+        "Oil": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "001C9E8E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "industrial-solvent",
+      "name": "Industrial solvent",
+      "value": 15,
+      "weight": 1,
+      "components": {
+        "Antiseptic": 4,
+        "Steel": 3
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001C7F26"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "injector",
+      "name": "Injector",
+      "value": 8,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00166B2E"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "iv-bag",
+      "name": "IV bag",
+      "value": 3,
+      "weight": 0.25,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00142428"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "jangles-the-moon-monkey",
+      "name": "Jangles the Moon Monkey",
+      "value": 12,
+      "weight": 2,
+      "components": {
+        "Cloth": 3,
+        "Fiberglass": 1,
+        "Plastic": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00147B03"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "jawless-brahmin-skull",
+      "name": "Jawless brahmin skull",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Bone": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188B3E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "jug",
+      "name": "Jug",
+      "value": 10,
+      "weight": 8,
+      "components": {
+        "Steel": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx03A2D4"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "kickball",
+      "name": "Kickball",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Rubber": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000822D3"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "kitchen-scale",
+      "name": "Kitchen scale",
+      "value": 6,
+      "weight": 2,
+      "components": {
+        "Spring": 3,
+        "Steel": 3
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000AF8EF"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "knight-rylans-holotag",
+      "name": "Knight Rylan's holotag",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000BDCDD"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "lab-bottle",
+      "name": "Lab bottle",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0017604F"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "ladle",
+      "name": "Ladle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B11"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "land-grant",
+      "name": "Land grant",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx045E6D"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "lantern",
+      "name": "Lantern",
+      "value": 15,
+      "weight": 3,
+      "components": {
+        "Glass": 2,
+        "Oil": 2,
+        "Steel": 3
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00096A21"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "large-baby-bottle",
+      "name": "Large baby bottle",
+      "value": 4,
+      "weight": 1,
+      "components": {
+        "Glass": 2,
+        "Rubber": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001A899B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "large-beaker",
+      "name": "Large beaker",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00176053"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "large-dinner-plate",
+      "name": "Large dinner plate",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488DA"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "large-plate",
+      "name": "Large plate",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488DC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "large-serving-plate",
+      "name": "Large serving plate",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488DB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "late-edition-newspaper",
+      "name": "Late edition newspaper",
+      "value": 2,
+      "weight": 0.1,
+      "components": {
+        "Cloth": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000FCDC8"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "league-bowling-pin",
+      "name": "League bowling pin",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Plastic": 2,
+        "Wood": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000DF267"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "left-arm-bones",
+      "name": "Left arm bones",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347E9"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "left-foot-bones",
+      "name": "Left foot bones",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347EB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "left-hand-bones",
+      "name": "Left hand bones",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347E3"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "left-leg-bones",
+      "name": "Left leg bones",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347E5"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "life-preserver",
+      "name": "Life preserver",
+      "value": 6,
+      "weight": 3,
+      "components": {
+        "Plastic": 3,
+        "Spring": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00141DF2"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "light-bulb",
+      "name": "Light bulb",
+      "value": 3,
+      "weight": 0.5,
+      "components": {
+        "Copper": 1,
+        "Glass": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0005A0D3"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "liquor-bottle",
+      "name": "Liquor bottle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DF221"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "lit-cigar",
+      "name": "Lit cigar",
+      "value": 1,
+      "weight": 0,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0008E36E"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "lit-cigarette",
+      "name": "Lit cigarette",
+      "value": 1,
+      "weight": 0,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0008E36D"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "lit-stogie",
+      "name": "Lit stogie",
+      "value": 1,
+      "weight": 0,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00159F09"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "locket",
+      "name": "Locket",
+      "value": 50,
+      "weight": 0,
+      "components": {
+        "Silver": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00199043"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "lumberjack-saw",
+      "name": "Lumberjack saw",
+      "value": 3,
+      "weight": 2,
+      "components": {
+        "Steel": 3,
+        "Wood": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx0365EE"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "luxobrew-coffee-pot",
+      "name": "Luxobrew coffee pot",
+      "value": 5,
+      "weight": 1,
+      "components": {
+        "Asbestos": 2,
+        "Plastic": 2,
+        "Steel": 3
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "001C7F1B"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "magnifying-glass",
+      "name": "Magnifying glass",
+      "value": 8,
+      "weight": 0.5,
+      "components": {
+        "Copper": 1,
+        "Crystal": 2,
+        "Glass": 2
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0011DA13"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "makeshift-battery",
+      "name": "Makeshift battery",
+      "value": 17,
+      "weight": 6,
+      "components": {
+        "Acid": 3,
+        "Lead": 3,
+        "Wood": 1
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "001AAD69"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "manuscript",
+      "name": "Manuscript",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx045E6B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "masonry-hammer",
+      "name": "Masonry hammer",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Steel": 2,
+        "Wood": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001A0B12"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "medical-liquid-nitrogen-dispenser",
+      "name": "Medical liquid nitrogen dispenser",
+      "value": 12,
+      "weight": 5,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060EA2"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "metal-bucket",
+      "name": "Metal bucket",
+      "value": 2,
+      "weight": 3,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059A80"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "microscope",
+      "name": "Microscope",
+      "value": 22,
+      "weight": 5,
+      "components": {
+        "Crystal": 2,
+        "Fiber optics": 1,
+        "Gears": 2,
+        "Glass": 2
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 4,
+      "origin": "base",
+      "formIds": [
+        "00059AEB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "military-ammo-bag",
+      "name": "Military ammo bag",
+      "value": 4,
+      "weight": 3,
+      "components": {
+        "Ballistic fiber": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060E77"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "military-grade-circuit-board",
+      "name": "Military-grade circuit board",
+      "value": 25,
+      "weight": 2,
+      "components": {
+        "Circuitry": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00154AD2"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "military-grade-duct-tape",
+      "name": "Military grade duct tape",
+      "value": 30,
+      "weight": 0.1,
+      "components": {
+        "Adhesive": 4,
+        "Ballistic fiber": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00060E78"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "mini-nuke-beryllium-cap",
+      "name": "Mini nuke beryllium cap",
+      "value": 0,
+      "weight": 0,
+      "components": {
+        "Nuclear material": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0017A778"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "mini-nuke-detonator-shell",
+      "name": "Mini nuke detonator shell",
+      "value": 0,
+      "weight": 0,
+      "components": {
+        "Nuclear material": 2,
+        "Steel": 3
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0017A776"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "mini-nuke-hemisphere-core",
+      "name": "Mini nuke hemisphere core",
+      "value": 0,
+      "weight": 0,
+      "components": {
+        "Nuclear material": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0017A772"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "mini-nuke-stabilizer-fins",
+      "name": "Mini nuke stabilizer fins",
+      "value": 0,
+      "weight": 0,
+      "components": {
+        "Screw": 2,
+        "Steel": 3
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0017A774"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "mole-rat-hide",
+      "name": "Mole rat hide",
+      "value": 8,
+      "weight": 0.5,
+      "components": {
+        "Leather": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0022B628"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "mole-rat-teeth",
+      "name": "Mole rat teeth",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Bone": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00034603"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "mop",
+      "name": "Mop",
+      "value": 1,
+      "weight": 2,
+      "components": {
+        "Cloth": 2,
+        "Wood": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059AEE"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "mr-handy-fuel",
+      "name": "Mr. Handy fuel",
+      "value": 14,
+      "weight": 3,
+      "components": {
+        "Oil": 2,
+        "Steel": 3
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000B91FF"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "new-floral-barrel-vase",
+      "name": "New floral barrel vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC91B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-floral-bud-vase",
+      "name": "New floral bud vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC917"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-floral-flared-vase",
+      "name": "New floral flared vase",
+      "value": 1,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8EE"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-floral-rounded-vase",
+      "name": "New floral rounded vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8EA"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-floral-vaulted-vase",
+      "name": "New floral vaulted vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC914",
+        "FEXXX0F7"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-power-cables",
+      "name": "New power cables",
+      "value": 15,
+      "weight": 1,
+      "components": {
+        "Copper": 2,
+        "Steel": 3
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00091FD2"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "new-teal-barrel-vase",
+      "name": "New teal barrel vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC918"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-teal-bud-vase",
+      "name": "New teal bud vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC915"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-teal-flared-vase",
+      "name": "New teal flared vase",
+      "value": 1,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8EC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-teal-rounded-vase",
+      "name": "New teal rounded vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8E6"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-teal-vaulted-vase",
+      "name": "New teal vaulted vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC909"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-toy-car",
+      "name": "New toy car",
+      "value": 10,
+      "weight": 1,
+      "components": {
+        "Screw": 1,
+        "Wood": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000FCE2F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "new-toy-truck",
+      "name": "New toy truck",
+      "value": 15,
+      "weight": 1,
+      "components": {
+        "Screw": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0015E8F7"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "new-willow-barrel-vase",
+      "name": "New willow barrel vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC91A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-willow-bud-vase",
+      "name": "New willow bud vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC916"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-willow-flared-vase",
+      "name": "New willow flared vase",
+      "value": 1,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8ED"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-willow-rounded-vase",
+      "name": "New willow rounded vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8E8"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "new-willow-vaulted-vase",
+      "name": "New willow vaulted vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC913"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "nine-ball",
+      "name": "Nine ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4E5"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "nuka-cola-bottle",
+      "name": "Nuka-Cola bottle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0004835A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "nuka-cola-cup",
+      "name": "Nuka-Cola cup",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02A186"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "nuka-cola-cup-and-straw",
+      "name": "Nuka-Cola cup and straw",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Cloth": 1,
+        "Plastic": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02B60C"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "nuka-cola-cup-pack",
+      "name": "Nuka-Cola cup pack",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Cloth": 1,
+        "Plastic": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02B60F"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "office-desk-fan",
+      "name": "Office desk fan",
+      "value": 4,
+      "weight": 3,
+      "components": {
+        "Gears": 2,
+        "Screw": 2,
+        "Steel": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00192D5D"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "oil-can",
+      "name": "Oil can",
+      "value": 15,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 1,
+        "Oil": 4
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001C7F23"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "oil-canister",
+      "name": "Oil canister",
+      "value": 12,
+      "weight": 3,
+      "components": {
+        "Oil": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001AB5ED"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "one-ball",
+      "name": "One ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4DA"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "oven-mitt",
+      "name": "Oven mitt",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Asbestos": 1,
+        "Cloth": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00060E7B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "pack-of-cigarettes",
+      "name": "Pack of cigarettes",
+      "value": 12,
+      "weight": 0.1,
+      "components": {
+        "Asbestos": 1,
+        "Cloth": 2,
+        "Plastic": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0005821A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "pack-of-duct-tape",
+      "name": "Pack of duct tape",
+      "value": 20,
+      "weight": 0.1,
+      "components": {
+        "Adhesive": 4,
+        "Cloth": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001C7F1F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "paint-can",
+      "name": "Paint can",
+      "value": 10,
+      "weight": 5,
+      "components": {
+        "Oil": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B3B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "paintbrush",
+      "name": "Paintbrush",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Cloth": 1,
+        "Wood": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00060ECF"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "pelvis-bones",
+      "name": "Pelvis bones",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188C9D"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "pen",
+      "name": "Pen",
+      "value": 1,
+      "weight": 0,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00140D99"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "pencil",
+      "name": "Pencil",
+      "value": 1,
+      "weight": 0,
+      "components": {
+        "Lead": 1,
+        "Wood": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059AF8"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "pepper-mill",
+      "name": "Pepper mill",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 1,
+        "Screw": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00020189"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "picture-frame",
+      "name": "Picture frame",
+      "value": 4,
+      "weight": 1,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0014DE02",
+        "xx000F15"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "pint-glass",
+      "name": "Pint glass",
+      "value": 3,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0011EB44"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "pizza-tray",
+      "name": "Pizza tray",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02A187"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "plastic-bowl",
+      "name": "Plastic bowl",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060ED9",
+        "xx010129"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "plastic-fork",
+      "name": "Plastic fork",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059ACB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "plastic-knife",
+      "name": "Plastic knife",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060E94"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "plastic-plate",
+      "name": "Plastic plate",
+      "value": 1,
+      "weight": 0.25,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AFA",
+        "xx010130"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "plastic-pumpkin",
+      "name": "Plastic pumpkin",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000A8AB1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "plastic-skull",
+      "name": "Plastic skull",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Plastic": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx045CF7"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "plastic-spoon",
+      "name": "Plastic spoon",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B10"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "plastic-upper-skull",
+      "name": "Plastic upper skull",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx045CF8"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "plate",
+      "name": "Plate",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00140B27"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "plunger",
+      "name": "Plunger",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Rubber": 2,
+        "Wood": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059AFB"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "power-relay-coil",
+      "name": "Power relay coil",
+      "value": 15,
+      "weight": 0.5,
+      "components": {
+        "Copper": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00091FDE"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "pre-war-lamp",
+      "name": "Pre-War lamp",
+      "value": 15,
+      "weight": 3,
+      "components": {
+        "Copper": 4,
+        "Glass": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00078309"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "pre-war-money",
+      "name": "Pre-War Money",
+      "value": 8,
+      "weight": 0,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B02"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "preserved-cigarette-pack",
+      "name": "Preserved cigarette pack",
+      "value": 12,
+      "weight": 0.1,
+      "components": {
+        "Asbestos": 1,
+        "Cloth": 2,
+        "Plastic": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "000E3770"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "property-deed",
+      "name": "Property deed",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx045E20"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "prosnap-camera",
+      "name": "ProSnap camera",
+      "value": 30,
+      "weight": 3,
+      "components": {
+        "Crystal": 4,
+        "Gears": 4,
+        "Spring": 4
+      },
+      "totalComponents": 12,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "001C7F28"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "prototype-biometric-scanner",
+      "name": "Prototype biometric scanner",
+      "value": 164,
+      "weight": 3,
+      "components": {
+        "Asbestos": 1,
+        "Fiber optics": 1,
+        "Nuclear material": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0014DDFA"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "rack",
+      "name": "Rack",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AFF"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "radioactive-gland",
+      "name": "Radioactive gland",
+      "value": 30,
+      "weight": 0.5,
+      "components": {
+        "Nuclear material": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0021C00B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "radscorpion-stinger",
+      "name": "Radscorpion stinger",
+      "value": 30,
+      "weight": 0.5,
+      "components": {
+        "Nuclear material": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000628ED"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "radstag-hide",
+      "name": "Radstag hide",
+      "value": 8,
+      "weight": 2,
+      "components": {
+        "Leather": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0022B626"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "rat-poison",
+      "name": "Rat poison",
+      "value": 6,
+      "weight": 0.5,
+      "components": {
+        "Asbestos": 1,
+        "Fiberglass": 2,
+        "Steel": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00060ED8"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "recorder",
+      "name": "Recorder",
+      "value": 23,
+      "weight": 0.75,
+      "components": {
+        "Aluminum": 1,
+        "Circuitry": 1,
+        "Glass": 1,
+        "Nuclear material": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 4,
+      "origin": "base",
+      "formIds": [
+        "0013FF87"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "red-paint",
+      "name": "Red paint",
+      "value": 10,
+      "weight": 5,
+      "components": {
+        "Oil": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx056C69",
+        "FEXXX801"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "red-paint-can",
+      "name": "Red paint can",
+      "value": 10,
+      "weight": 5,
+      "components": {
+        "Oil": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "far-harbor",
+      "formIds": [
+        "xx044BDB"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "red-plate",
+      "name": "Red plate",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00165327"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "reporters-camera",
+      "name": "Reporter's camera",
+      "value": 112,
+      "weight": 3,
+      "components": {
+        "Crystal": 2,
+        "Gears": 2,
+        "Spring": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0014DD48"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "reporters-pen",
+      "name": "Reporter's pen",
+      "value": 3,
+      "weight": 0,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0014DDAF"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "reporters-pencil",
+      "name": "Reporter's pencil",
+      "value": 10,
+      "weight": 0,
+      "components": {
+        "Lead": 1,
+        "Wood": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0014DDBD"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "research-test-tube",
+      "name": "Research test tube",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B16"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "restored-desk-fan",
+      "name": "Restored desk fan",
+      "value": 8,
+      "weight": 3,
+      "components": {
+        "Gears": 2,
+        "Screw": 2,
+        "Steel": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "000F15BF"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "rib-cage",
+      "name": "Rib cage",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188C98"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "rib-cage-and-pelvis",
+      "name": "Rib cage and pelvis",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347E7"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "rib-cage-and-spine",
+      "name": "Rib cage and spine",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347E6"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "right-arm-bones",
+      "name": "Right arm bones",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347E8"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "right-foot-bones",
+      "name": "Right foot bones",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347EA"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "right-hand-bones",
+      "name": "Right hand bones",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347E2"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "right-leg-bones",
+      "name": "Right leg bones",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347E4"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "ring-stand",
+      "name": "Ring stand",
+      "value": 2,
+      "weight": 3,
+      "components": {
+        "Aluminum": 1,
+        "Steel": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000EC8B3"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "rolled-boston-bugle",
+      "name": "Rolled Boston Bugle",
+      "value": 2,
+      "weight": 0.1,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000286F5"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "rum-bottle",
+      "name": "Rum bottle",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Glass": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0014A138"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "ruptured-hallucigen-gas-canister",
+      "name": "Ruptured HalluciGen gas canister",
+      "value": 10,
+      "weight": 3,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0016D041"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "salt-shaker",
+      "name": "Salt shaker",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0002018A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "sauce-pan",
+      "name": "Sauce pan",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0003D3A6"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "sauce-pan-lid",
+      "name": "Sauce pan lid",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0003D3A7"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "saucer",
+      "name": "Saucer",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0019269B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "saw",
+      "name": "Saw",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Rubber": 1,
+        "Steel": 3
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00173F02"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "scalpel",
+      "name": "Scalpel",
+      "value": 5,
+      "weight": 0.25,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B43"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "scissors",
+      "name": "Scissors",
+      "value": 3,
+      "weight": 0.25,
+      "components": {
+        "Plastic": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B44"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "screwdriver",
+      "name": "Screwdriver",
+      "value": 3,
+      "weight": 0.5,
+      "components": {
+        "Steel": 2,
+        "Wood": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0004D1F4"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "sealed-boston-bugle",
+      "name": "Sealed Boston Bugle",
+      "value": 1,
+      "weight": 0,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00140D84"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "sealed-wonderglue",
+      "name": "Sealed wonderglue",
+      "value": 25,
+      "weight": 0.1,
+      "components": {
+        "Adhesive": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E3784"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "sensor",
+      "name": "Sensor",
+      "value": 20,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 1,
+        "Nuclear material": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00166B31"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "sensor-module",
+      "name": "Sensor module",
+      "value": 30,
+      "weight": 2,
+      "components": {
+        "Circuitry": 5,
+        "Copper": 2,
+        "Steel": 1
+      },
+      "totalComponents": 8,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "001ACC8E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "seven-ball",
+      "name": "Seven ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4E2"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "shadeless-lamp",
+      "name": "Shadeless lamp",
+      "value": 5,
+      "weight": 3,
+      "components": {
+        "Copper": 1,
+        "Glass": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0003F8C2"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "shadeless-table-lamp",
+      "name": "Shadeless table lamp",
+      "value": 5,
+      "weight": 3,
+      "components": {
+        "Copper": 1,
+        "Glass": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0007830B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "shem-drownes-skull",
+      "name": "Shem Drowne's skull",
+      "value": 10,
+      "weight": 0.1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00147D5D"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "shopping-basket",
+      "name": "Shopping basket",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Plastic": 1,
+        "Steel": 3
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00090E5E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "shot-glass",
+      "name": "Shot glass",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B0A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "shovel",
+      "name": "Shovel",
+      "value": 3,
+      "weight": 5,
+      "components": {
+        "Steel": 3,
+        "Wood": 3
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000822CB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "silver-bar",
+      "name": "Silver bar",
+      "value": 300,
+      "weight": 0.5,
+      "components": {
+        "Silver": 10
+      },
+      "totalComponents": 10,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00100E1C"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "silver-bowl",
+      "name": "Silver bowl",
+      "value": 15,
+      "weight": 1,
+      "components": {
+        "Silver": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060EDB"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "silver-fork",
+      "name": "Silver fork",
+      "value": 4,
+      "weight": 0.1,
+      "components": {
+        "Silver": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060E8B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "silver-hairbrush",
+      "name": "Silver hairbrush",
+      "value": 63,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 1,
+        "Silver": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0014DDFF"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "silver-locket",
+      "name": "Silver locket",
+      "value": 10,
+      "weight": 0.1,
+      "components": {
+        "Silver": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B34"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "silver-plate",
+      "name": "Silver plate",
+      "value": 7,
+      "weight": 1,
+      "components": {
+        "Silver": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060E91"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "silver-pocket-watch",
+      "name": "Silver pocket watch",
+      "value": 25,
+      "weight": 0.5,
+      "components": {
+        "Gears": 2,
+        "Silver": 2,
+        "Spring": 1
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00060E7D"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "silver-table-knife",
+      "name": "Silver table knife",
+      "value": 4,
+      "weight": 0.1,
+      "components": {
+        "Silver": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060E8D"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "silver-table-spoon",
+      "name": "Silver table spoon",
+      "value": 4,
+      "weight": 0.1,
+      "components": {
+        "Silver": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060E95"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "six-ball",
+      "name": "Six ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4E0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "skull",
+      "name": "Skull",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347E1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "skull-cap-bone",
+      "name": "Skull cap bone",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188CA2"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "skull-eye-socket",
+      "name": "Skull eye socket",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188C9F"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "skull-faceplate",
+      "name": "Skull faceplate",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188C9E"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "skull-fragment",
+      "name": "Skull fragment",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188CA1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "small-baby-bottle",
+      "name": "Small baby bottle",
+      "value": 4,
+      "weight": 1,
+      "components": {
+        "Glass": 2,
+        "Rubber": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001A89A0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "small-covered-sauce-pan",
+      "name": "Small covered sauce pan",
+      "value": 1,
+      "weight": 1.25,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0003D3AB"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "small-dinner-plate",
+      "name": "Small dinner plate",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488DD"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "small-picture-frame",
+      "name": "Small picture frame",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "001A89A3"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "small-plate",
+      "name": "Small plate",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488DF"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "small-sauce-pan",
+      "name": "Small sauce pan",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0003D3A9",
+        "FEXXX115"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "small-sauce-pan-lid",
+      "name": "Small sauce pan lid",
+      "value": 1,
+      "weight": 0.25,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0003D3AA"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "small-serving-plate",
+      "name": "Small serving plate",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000488DE"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "soap",
+      "name": "Soap",
+      "value": 4,
+      "weight": 0.5,
+      "components": {
+        "Oil": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0019945F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "souvenir-coffee-cup",
+      "name": "Souvenir coffee cup",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02689D"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "souvenir-drinking-glass",
+      "name": "Souvenir drinking glass",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02689E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "souvenir-magnet-badge",
+      "name": "Souvenir magnet badge",
+      "value": 3,
+      "weight": 0.25,
+      "components": {
+        "Ceramic": 1,
+        "Copper": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02A181"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "souvenir-magnet-cat",
+      "name": "Souvenir magnet cat",
+      "value": 3,
+      "weight": 0.25,
+      "components": {
+        "Ceramic": 1,
+        "Copper": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02A184"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "souvenir-magnet-cow",
+      "name": "Souvenir magnet cow",
+      "value": 3,
+      "weight": 0.25,
+      "components": {
+        "Ceramic": 1,
+        "Copper": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx0268A1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "souvenir-magnet-flower",
+      "name": "Souvenir magnet flower",
+      "value": 3,
+      "weight": 0.25,
+      "components": {
+        "Ceramic": 1,
+        "Copper": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02A182"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "souvenir-magnet-frog",
+      "name": "Souvenir magnet frog",
+      "value": 3,
+      "weight": 0.25,
+      "components": {
+        "Ceramic": 1,
+        "Copper": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02A183"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "souvenir-plastic-bowl",
+      "name": "Souvenir plastic bowl",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx0268A0"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "souvenir-plate",
+      "name": "Souvenir plate",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02689F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "souvenir-sloth-toy",
+      "name": "Souvenir sloth toy",
+      "value": 3,
+      "weight": 1,
+      "components": {
+        "Cloth": 3,
+        "Leather": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02A185"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "souvenir-teddy-bear",
+      "name": "Souvenir teddy bear",
+      "value": 3,
+      "weight": 1,
+      "components": {
+        "Cloth": 3,
+        "Leather": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02689C",
+        "xx02A180"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "souvenir-toy-car",
+      "name": "Souvenir toy car",
+      "value": 5,
+      "weight": 1,
+      "components": {
+        "Screw": 1,
+        "Wood": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "nuka-world",
+      "formIds": [
+        "xx02BFEF"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "spanner",
+      "name": "Spanner",
+      "value": 8,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00166B32"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "spatula",
+      "name": "Spatula",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Rubber": 1,
+        "Steel": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B0F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "spine",
+      "name": "Spine",
+      "value": 5,
+      "weight": 1,
+      "components": {
+        "Bone": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347ED"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "steel-ball",
+      "name": "Steel ball",
+      "value": 4,
+      "weight": 18,
+      "components": {
+        "Steel": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "xx000977"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "stew-pot",
+      "name": "Stew pot",
+      "value": 8,
+      "weight": 3,
+      "components": {
+        "Copper": 1,
+        "Steel": 3
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059A7A"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "stogie",
+      "name": "Stogie",
+      "value": 1,
+      "weight": 0,
+      "components": {
+        "Cloth": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00159F0A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "straw-pillow",
+      "name": "Straw pillow",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Cloth": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060EC7"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "suprathaw-antifreeze",
+      "name": "Suprathaw antifreeze",
+      "value": 8,
+      "weight": 2,
+      "components": {
+        "Acid": 4,
+        "Plastic": 3
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001C7F31"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "surgical-scalpel",
+      "name": "Surgical scalpel",
+      "value": 5,
+      "weight": 0.25,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000C9ADA"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "surgical-tray",
+      "name": "Surgical tray",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AD8"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "swan-boat-fragments",
+      "name": "Swan boat fragments",
+      "value": 12,
+      "weight": 0,
+      "components": {
+        "Fiberglass": 5,
+        "Plastic": 1,
+        "Steel": 1
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "001CC26F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "sweeper",
+      "name": "Sweeper",
+      "value": 100,
+      "weight": 4,
+      "components": {
+        "Aluminum": 3,
+        "Circuitry": 2,
+        "Nuclear material": 2
+      },
+      "totalComponents": 7,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "001C9A67"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "synth-component",
+      "name": "Synth component",
+      "value": 20,
+      "weight": 0,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000CFF74",
+        "xx0180D9"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "table-knife",
+      "name": "Table knife",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AE1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "table-spoon",
+      "name": "Table spoon",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060E96"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "tabletop-picture-frame",
+      "name": "Tabletop picture frame",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "001A8E0B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "tack-hammer",
+      "name": "Tack hammer",
+      "value": 2,
+      "weight": 1.5,
+      "components": {
+        "Steel": 1,
+        "Wood": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001A0B11"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "tall-flask",
+      "name": "Tall flask",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000EC8AB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "tea-kettle",
+      "name": "Tea kettle",
+      "value": 2,
+      "weight": 1.5,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00020199"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "teacup",
+      "name": "Teacup",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00192699"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "teal-barrel-vase",
+      "name": "Teal barrel vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8CD"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "teal-bud-vase",
+      "name": "Teal bud vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8CC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "teal-flared-vase",
+      "name": "Teal flared vase",
+      "value": 1,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8C8"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "teal-rounded-vase",
+      "name": "Teal rounded vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8C6"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "teal-vaulted-vase",
+      "name": "Teal vaulted vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8CA"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "teapot",
+      "name": "Teapot",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Asbestos": 1,
+        "Ceramic": 5
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00192697"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "teddy-bear",
+      "name": "Teddy bear",
+      "value": 3,
+      "weight": 1,
+      "components": {
+        "Cloth": 3,
+        "Leather": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B14",
+        "0022C1F0"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "telephone",
+      "name": "Telephone",
+      "value": 5,
+      "weight": 3,
+      "components": {
+        "Circuitry": 2,
+        "Copper": 1,
+        "Fiberglass": 2
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00059B15",
+        "FEXXXD71"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "ten-ball",
+      "name": "Ten ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4E7"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "test-tube",
+      "name": "Test tube",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000EAFC1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "test-tube-rack",
+      "name": "Test tube rack",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000EAFBE"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "thin-beaker",
+      "name": "Thin beaker",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Glass": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00176051"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "thirteen-ball",
+      "name": "Thirteen ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4ED"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "three-ball",
+      "name": "Three ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4DC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "tibia",
+      "name": "Tibia",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Bone": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00188C9C"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "tin-can",
+      "name": "Tin can",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0001F90A"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "toaster",
+      "name": "Toaster",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Spring": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B19",
+        "00059B1A"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "tongs",
+      "name": "Tongs",
+      "value": 18,
+      "weight": 3,
+      "components": {
+        "Screw": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "001A0B15"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "toothbrush",
+      "name": "Toothbrush",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Plastic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00060ECE"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "toothpaste",
+      "name": "Toothpaste",
+      "value": 3,
+      "weight": 0.25,
+      "components": {
+        "Antiseptic": 2,
+        "Plastic": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00199A88",
+        "FEXXX77F"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "torque-rod-end",
+      "name": "Torque rod end",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Steel": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E1FF8"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "toy-alien",
+      "name": "Toy alien",
+      "value": 5,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2,
+        "Rubber": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B2B"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "toy-car",
+      "name": "Toy car",
+      "value": 5,
+      "weight": 1,
+      "components": {
+        "Screw": 1,
+        "Wood": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B1C"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "toy-rocketship",
+      "name": "Toy rocketship",
+      "value": 7,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 1,
+        "Plastic": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B2A"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "toy-truck",
+      "name": "Toy truck",
+      "value": 8,
+      "weight": 1,
+      "components": {
+        "Screw": 1,
+        "Steel": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0015E8F6"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "tray",
+      "name": "Tray",
+      "value": 12,
+      "weight": 1,
+      "components": {
+        "Aluminum": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0019DFF3"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "tri-tool",
+      "name": "Tri tool",
+      "value": 15,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 1,
+        "Nuclear material": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00166B34"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "trifold-american-flag",
+      "name": "Trifold American flag",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Cloth": 4,
+        "Wood": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B2E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "tube-flange",
+      "name": "Tube flange",
+      "value": 2,
+      "weight": 5,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E1FF6"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "turpentine",
+      "name": "Turpentine",
+      "value": 10,
+      "weight": 1,
+      "components": {
+        "Antiseptic": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00059B1E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "tv-dinner-tray",
+      "name": "TV dinner tray",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Aluminum": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B2C"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "tweezers",
+      "name": "Tweezers",
+      "value": 8,
+      "weight": 0.2,
+      "components": {
+        "Aluminum": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0013FF41"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "twelve-ball",
+      "name": "Twelve ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0018E4EB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "two-ball",
+      "name": "Two ball",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Plastic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059AFD"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "typewriter",
+      "name": "Typewriter",
+      "value": 11,
+      "weight": 5,
+      "components": {
+        "Gears": 3,
+        "Screw": 2,
+        "Spring": 3
+      },
+      "totalComponents": 8,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "00059B20",
+        "xx001BE5"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "umbrella",
+      "name": "Umbrella",
+      "value": 3,
+      "weight": 1.5,
+      "components": {
+        "Plastic": 2,
+        "Spring": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000BA2F8"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "umbrella-stand",
+      "name": "Umbrella stand",
+      "value": 2,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000BA3F7"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "undamaged-abraxo-cleaner",
+      "name": "Undamaged Abraxo cleaner",
+      "value": 10,
+      "weight": 1,
+      "components": {
+        "Acid": 1,
+        "Antiseptic": 2,
+        "Fiberglass": 1
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "000E3760"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "undamaged-american-flag",
+      "name": "Undamaged American flag",
+      "value": 9,
+      "weight": 3,
+      "components": {
+        "Cloth": 4,
+        "Wood": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000FCE31"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "undamaged-baseball-glove",
+      "name": "Undamaged baseball glove",
+      "value": 6,
+      "weight": 1,
+      "components": {
+        "Leather": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E3766"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "undamaged-camera",
+      "name": "Undamaged camera",
+      "value": 18,
+      "weight": 3,
+      "components": {
+        "Crystal": 2,
+        "Gears": 2,
+        "Spring": 2
+      },
+      "totalComponents": 6,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "000E376C"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "undamaged-cigarettes",
+      "name": "Undamaged cigarettes",
+      "value": 50,
+      "weight": 1,
+      "components": {
+        "Asbestos": 2,
+        "Cloth": 4,
+        "Plastic": 2
+      },
+      "totalComponents": 8,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "000E376E"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "unfilled-kickball",
+      "name": "Unfilled kickball",
+      "value": 1,
+      "weight": 0.5,
+      "components": {
+        "Rubber": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0002D9AB"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "unrusted-tin-can",
+      "name": "Unrusted tin can",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Aluminum": 1,
+        "Steel": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000F15BB"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "unscorched-oven-mitt",
+      "name": "Unscorched oven mitt",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Asbestos": 1,
+        "Cloth": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "000FE270"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "untarnished-coffee-pot",
+      "name": "Untarnished coffee pot",
+      "value": 3,
+      "weight": 1,
+      "components": {
+        "Asbestos": 1,
+        "Plastic": 1,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "0019930E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "untarnished-metal-bucket",
+      "name": "Untarnished metal bucket",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E377E"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "unused-ashtray",
+      "name": "Unused ashtray",
+      "value": 3,
+      "weight": 0.5,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E3762"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "unused-enamel-bucket",
+      "name": "Unused enamel bucket",
+      "value": 3,
+      "weight": 3,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000E3776"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "unused-flip-lighter",
+      "name": "Unused flip lighter",
+      "value": 21,
+      "weight": 0.5,
+      "components": {
+        "Oil": 1,
+        "Spring": 1,
+        "Steel": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 3,
+      "origin": "base",
+      "formIds": [
+        "000E377C"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "upper-skull",
+      "name": "Upper skull",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Bone": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000347EC"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "used-oil-can",
+      "name": "Used oil can",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Oil": 1,
+        "Steel": 1
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0004B273"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "vacuum-tube",
+      "name": "Vacuum tube",
+      "value": 3,
+      "weight": 0.25,
+      "components": {
+        "Copper": 1,
+        "Glass": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "00060AA3"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "vase",
+      "name": "Vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000B1647"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "vegetable-starch",
+      "name": "Vegetable starch",
+      "value": 6,
+      "weight": 0.5,
+      "components": {
+        "Adhesive": 5
+      },
+      "totalComponents": 5,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000657FE"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "vodka",
+      "name": "Vodka",
+      "value": 4,
+      "weight": 1,
+      "components": {
+        "Glass": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DF031"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "vodka-bottle",
+      "name": "Vodka bottle",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Glass": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DEDE0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "wakemaster-alarm-clock",
+      "name": "Wakemaster alarm clock",
+      "value": 15,
+      "weight": 1,
+      "components": {
+        "Aluminum": 2,
+        "Glass": 2,
+        "Nuclear material": 2,
+        "Spring": 2
+      },
+      "totalComponents": 8,
+      "uniqueComponents": 4,
+      "origin": "base",
+      "formIds": [
+        "001C9E92"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "whiskey",
+      "name": "Whiskey",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Glass": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DF032"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "whiskey-bottle",
+      "name": "Whiskey bottle",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Glass": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DEDE1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "white-bottle",
+      "name": "White bottle",
+      "value": 2,
+      "weight": 0.5,
+      "components": {
+        "Glass": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DF223"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "white-plate",
+      "name": "White plate",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00165326"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "willow-barrel-vase",
+      "name": "Willow barrel vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8C2"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "willow-bud-vase",
+      "name": "Willow bud vase",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8C1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "willow-flared-vase",
+      "name": "Willow flared vase",
+      "value": 1,
+      "weight": 2,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8BF"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "willow-rounded-vase",
+      "name": "Willow rounded vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8BE"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "willow-vaulted-vase",
+      "name": "Willow vaulted vase",
+      "value": 1,
+      "weight": 3,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000AC8C0"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "wine-bottle",
+      "name": "Wine bottle",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Glass": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000DEDED"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "wonderglue",
+      "name": "Wonderglue",
+      "value": 20,
+      "weight": 0.1,
+      "components": {
+        "Adhesive": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B25"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "wooden-block-b-y",
+      "name": "Wooden block - B & Y",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Wood": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00197502"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "wooden-block-i-d",
+      "name": "Wooden block - I & D",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Wood": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B1D"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "wooden-block-n-s",
+      "name": "Wooden block - N & S",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Wood": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00197503"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "wooden-block-v-f",
+      "name": "Wooden block - V & F",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Wood": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00197501"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "wooden-picture-frame",
+      "name": "Wooden picture frame",
+      "value": 4,
+      "weight": 1,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0014DE01"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "wooden-soldier-toy",
+      "name": "Wooden soldier toy",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 1
+      },
+      "totalComponents": 1,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00191E93"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "wooden-spoon",
+      "name": "Wooden spoon",
+      "value": 1,
+      "weight": 0.1,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "000FFE09"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "wrench",
+      "name": "Wrench",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Steel": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0004D1F7"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "yao-guai-hide",
+      "name": "Yao guai hide",
+      "value": 10,
+      "weight": 2.5,
+      "components": {
+        "Leather": 4
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0022B62A"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "yardstick",
+      "name": "Yardstick",
+      "value": 1,
+      "weight": 0.75,
+      "components": {
+        "Wood": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00059B3E"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "yellow-paint",
+      "name": "Yellow paint",
+      "value": 10,
+      "weight": 5,
+      "components": {
+        "Oil": 2,
+        "Steel": 2
+      },
+      "totalComponents": 4,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0001D95B"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "yellow-plate",
+      "name": "Yellow plate",
+      "value": 1,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "00165328"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "yellow-table-lamp",
+      "name": "Yellow table lamp",
+      "value": 5,
+      "weight": 3,
+      "components": {
+        "Copper": 1,
+        "Glass": 2
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0003F8C1"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "yellow-trimmed-plate",
+      "name": "Yellow-trimmed plate",
+      "value": 2,
+      "weight": 1,
+      "components": {
+        "Ceramic": 2
+      },
+      "totalComponents": 2,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0015CDF7"
+      ],
+      "inTargetPool": false
+    },
+    {
+      "id": "youth-league-baseball",
+      "name": "Youth League baseball",
+      "value": 20,
+      "weight": 1,
+      "components": {
+        "Cork": 2,
+        "Leather": 1
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 2,
+      "origin": "base",
+      "formIds": [
+        "0014DD17"
+      ],
+      "inTargetPool": true
+    },
+    {
+      "id": "youth-league-glove",
+      "name": "Youth League glove",
+      "value": 30,
+      "weight": 1,
+      "components": {
+        "Leather": 3
+      },
+      "totalComponents": 3,
+      "uniqueComponents": 1,
+      "origin": "base",
+      "formIds": [
+        "0014DD1A"
+      ],
+      "inTargetPool": true
+    }
+  ]
+}
