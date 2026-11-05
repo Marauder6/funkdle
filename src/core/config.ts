@@ -21,8 +21,8 @@ export const DEFAULT_FEEDBACK: FeedbackConfig = {
   totalCloseWithin: 1,
 };
 
-/** SPEC 3.3 [DEFAULT]: provisional until the Phase 1 simulation sets it. */
-export const GUESS_LIMIT = 8;
+/** SPEC 3.3, decided at the Phase 1 gate: 6 for now, revisit after real play. */
+export const GUESS_LIMIT = 6;
 
-/** SPEC 5.3 [DEFAULT; OPEN 13.1]: Creation Club items are parsed but kept out of both sets. */
+/** SPEC 5.3, 13.1 (decided: out): Creation Club items are parsed but kept out of both sets. */
 export const INCLUDE_CREATION_CLUB = false;

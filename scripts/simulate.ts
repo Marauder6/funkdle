@@ -14,7 +14,7 @@ import { counts, pct, prng, quantile } from "./lib/stats";
 
 const SEED = 20261030;
 const RUNS_PER_TARGET = 100;
-/** SPEC 6.3 [DEFAULT]: the limit is the smallest L at which consistent-random solves >= 95%. */
+/** SPEC 6.3: report the smallest L at which consistent-random solves >= 95%, as a lower bound. */
 const SOLVE_TARGET = 0.95;
 
 const raw = readFileSync(ITEMS_PATH, "utf8");
@@ -66,7 +66,7 @@ const out = (...l: string[]) => lines.push(...l);
 out(
   `Dataset sha256 \`${itemsSha}\`. Guessable set ${items.length}, target pool ${poolIdx.length}. Seed ${SEED}; consistent-random plays ${RUNS_PER_TARGET} games per target (${randomLengths.length.toLocaleString("en-US")} games), greedy plays one per target. Both choose guesses from the whole guessable set and count as candidates every guessable item consistent with the feedback so far.`,
   "",
-  `- **Recommended guess limit: ${recommended}** (smallest L at which consistent-random solves at least ${SOLVE_TARGET * 100}% of games within L guesses).`,
+  `- **${SOLVE_TARGET * 100}% rule: ${recommended} guesses** (smallest L at which consistent-random solves at least ${SOLVE_TARGET * 100}% of games within L guesses). A lower bound: the limit itself is set in \`src/core/config.ts\`.`,
   `- Greedy (skill ceiling): mean **${gs.mean.toFixed(2)}**, median ${gs.median}, max ${gs.max}. First guess: ${items[greedy.firstGuess()]!.name}.`,
   `- Consistent-random: mean **${rs.mean.toFixed(2)}**, median ${rs.median}, 95th percentile ${rs.p95}, max ${rs.max}.`,
   `- Under the current limit (${GUESS_LIMIT}): consistent-random solves ${pct(within(rs.sorted, GUESS_LIMIT), rs.sorted.length)}, greedy ${pct(within(gs.sorted, GUESS_LIMIT), gs.sorted.length)}.`,
