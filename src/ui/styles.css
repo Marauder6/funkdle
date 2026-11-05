@@ -1,0 +1,512 @@
+/* Funkdle: an original retro CRT-terminal look (SPEC 9.3). No game assets.
+   Colour pairs are checked for WCAG AA contrast by tests/contrast.test.ts, which reads the
+   custom properties in the two :root blocks below. Keep every colour a 6-digit hex there. */
+
+:root {
+  --bg: #070b07;
+  --panel: #0e160e;
+  --panel-hover: #16241a;
+  --border: #2a4d30;
+  --text: #b8f5c4;
+  --text-strong: #e6ffe9;
+  --muted: #8cc497;
+  --accent: #39ff6a;
+  --focus: #ffd34d;
+  --warn: #ffcf66;
+  --select-bg: #1d4d2a;
+  --match-bg: #1f6f3a;
+  --match-fg: #effff1;
+  --close-bg: #7a5c00;
+  --close-fg: #fff6db;
+  --miss-bg: #1c231c;
+  --miss-fg: #c9dccb;
+  color-scheme: dark;
+}
+
+:root[data-palette="colorblind"] {
+  --match-bg: #1f5fa8;
+  --match-fg: #f2f7ff;
+  --close-bg: #a34f00;
+  --close-fg: #fff4e8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Subtle scanlines; never over text strongly enough to cost contrast. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgb(0 0 0 / 0.12) 0 1px, transparent 1px 3px);
+}
+
+@media (prefers-contrast: more) {
+  body::after {
+    display: none;
+  }
+}
+
+#app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+button {
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--panel);
+  color: var(--text-strong);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--panel-hover);
+}
+
+button.primary {
+  background: var(--select-bg);
+}
+
+/* --- Header */
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  margin: 0;
+  color: var(--accent);
+  font-family: "VT323", ui-monospace, monospace;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgb(57 255 106 / 0.5);
+}
+
+.tagline,
+.mode {
+  margin: 0;
+  color: var(--muted);
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mode {
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.notice {
+  margin: 12px 0 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: var(--close-bg);
+  color: var(--close-fg);
+}
+
+.intro {
+  color: var(--muted);
+}
+
+/* --- Guess input */
+
+.combo {
+  position: relative;
+}
+
+.combo label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+.combo input {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--panel);
+  color: var(--text-strong);
+  font: inherit;
+  font-size: 1.1rem;
+}
+
+.combo input::placeholder {
+  color: var(--muted);
+}
+
+.combo ul {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  max-height: 18rem;
+  margin: 4px 0 0;
+  padding: 4px 0;
+  overflow-y: auto;
+  list-style: none;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--panel);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.6);
+}
+
+.combo li {
+  padding: 8px 12px;
+  color: var(--text);
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.combo li:hover {
+  background: var(--panel-hover);
+}
+
+.combo li[aria-selected="true"] {
+  background: var(--select-bg);
+  color: var(--text-strong);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.hint {
+  min-height: 1.5em;
+  margin: 6px 0 0;
+  color: var(--warn);
+}
+
+.counter,
+.status {
+  margin: 4px 0;
+  color: var(--muted);
+}
+
+/* --- Guess history. One structure: cards on phones, a table from 768 px. */
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.empty {
+  color: var(--muted);
+}
+
+.guess .cell:not(.col-name) {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.col-name {
+  min-width: 0;
+  color: var(--text-strong);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.cell-text {
+  overflow-wrap: anywhere;
+}
+
+.cell-marks {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.state-match {
+  background: var(--match-bg);
+  color: var(--match-fg);
+}
+
+.state-close {
+  background: var(--close-bg);
+  color: var(--close-fg);
+}
+
+.state-miss {
+  background: var(--miss-bg);
+  color: var(--miss-fg);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.chip {
+  padding: 1px 6px;
+  border: 1px solid currentcolor;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.chip.present {
+  background: var(--match-bg);
+  color: var(--match-fg);
+}
+
+.chip.absent {
+  background: var(--miss-bg);
+  color: var(--miss-fg);
+}
+
+@media (max-width: 767.98px) {
+  .history .head {
+    display: none;
+  }
+
+  .guess {
+    display: grid;
+    grid-template-areas:
+      "name name name"
+      "weight value total"
+      "unique origin origin"
+      "components components components";
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--panel);
+    font-size: 0.95rem;
+  }
+
+  .col-name {
+    grid-area: name;
+  }
+  .col-weight {
+    grid-area: weight;
+  }
+  .col-value {
+    grid-area: value;
+  }
+  .col-components {
+    grid-area: components;
+  }
+  .col-total {
+    grid-area: total;
+  }
+  .col-unique {
+    grid-area: unique;
+  }
+  .col-origin {
+    grid-area: origin;
+  }
+
+  .cell-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (min-width: 768px) {
+  .history .head,
+  .guess {
+    display: grid;
+    grid-template-columns:
+      minmax(8rem, 1.3fr) minmax(5.5rem, 0.6fr) minmax(6.5rem, 0.7fr) minmax(12rem, 2.6fr)
+      minmax(4.5rem, 0.5fr) minmax(4.5rem, 0.5fr) minmax(7.5rem, 0.8fr);
+    gap: 6px;
+    padding: 6px 10px;
+  }
+
+  .history .head {
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .guess {
+    align-items: stretch;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--panel);
+  }
+
+  .guess .col-name {
+    align-self: center;
+  }
+
+  .cell-title {
+    display: none;
+  }
+}
+
+/* Cells of a new row reveal left to right, 120 ms apart (SPEC 9.1: at most 150 ms). */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.reveal {
+  animation: reveal 300ms ease-out both;
+  animation-delay: calc(var(--i, 0) * 120ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+  }
+}
+
+:root[data-motion="reduce"] .reveal {
+  animation: none;
+}
+
+/* --- End of game */
+
+.end {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--panel);
+}
+
+.end h2 {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-family: "VT323", ui-monospace, monospace;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 16px;
+  margin: 12px 0 16px;
+}
+
+.facts dt {
+  color: var(--muted);
+}
+
+.facts dd {
+  margin: 0;
+  color: var(--text-strong);
+  overflow-wrap: anywhere;
+}
+
+/* --- Dialogs */
+
+.dialog {
+  width: min(30rem, calc(100vw - 32px));
+  padding: 0;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--text);
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 0.7);
+}
+
+.dialog-body {
+  padding: 20px;
+}
+
+.dialog h2 {
+  margin-top: 0;
+  color: var(--text-strong);
+}
+
+.setting {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.setting input {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.15rem;
+  accent-color: var(--accent);
+}
+
+/* --- Footer */
+
+footer {
+  margin-top: 32px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
