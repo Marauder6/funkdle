@@ -38,10 +38,10 @@ Rows parsed: **617**. Items kept (guessable set): **552**. Target pool: **256**.
 | Manuscript | Far Harbor | rule | marked cut content on the wiki (not obtainable in normal play) |
 | Modified bowling ball schematic | Far Harbor | override | A quest schematic, not junk; SPEC 5.3 excludes schematic items. The wiki gives it value 0, weight 0 and Cloth x1. |
 | Property deed | Far Harbor | rule | marked cut content on the wiki (not obtainable in normal play) |
+| Captain Cosmos poster | Creation Club/Creations | rule | marked cut content on the wiki (not obtainable in normal play) |
 | CC-00 helmet prop | Creation Club/Creations | rule | marked cut content on the wiki (not obtainable in normal play) |
 | Map of the Commonwealth | Creation Club/Creations | override | Value and weight are blank on the wiki. |
 | Betty Buttercup | Creation Club/Creations | config | Creation Club item (INCLUDE_CREATION_CLUB is false) |
-| Captain Cosmos poster | Creation Club/Creations | config | Creation Club item (INCLUDE_CREATION_CLUB is false) |
 | Captain Cosmos power armor figurine | Creation Club/Creations | config | Creation Club item (INCLUDE_CREATION_CLUB is false) |
 | CC-00 module prop | Creation Club/Creations | config | Creation Club item (INCLUDE_CREATION_CLUB is false) |
 | CC-00 piece prop | Creation Club/Creations | config | Creation Club item (INCLUDE_CREATION_CLUB is false) |

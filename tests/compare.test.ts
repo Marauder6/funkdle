@@ -120,6 +120,51 @@ describe("close boundaries (SPEC 4.1, inclusive)", () => {
     expect(compare(synthetic({ weight: 0.5, value: 2 }), t, cfg).value.state).toBe("close");
     expect(compare(synthetic({ weight: 0.51, value: 3 }), t, cfg).value.state).toBe("miss");
     expect(compare(synthetic({ weight: 0, value: 0 }), t, cfg).weight.state).toBe("match");
+    // Review 2026-11-05: the zero-weight miss boundary was never asserted.
+    expect(compare(synthetic({ weight: 0.51 }), t, cfg).weight).toEqual({
+      state: "miss",
+      direction: "lower",
+    });
+  });
+
+  it("a zero guess against a non-zero target points higher", () => {
+    const fb = compare(
+      synthetic({ weight: 0, value: 0 }),
+      synthetic({ weight: 3, value: 40 }),
+      cfg,
+    );
+    expect(fb.weight).toEqual({ state: "miss", direction: "higher" });
+    expect(fb.value).toEqual({ state: "miss", direction: "higher" });
+  });
+
+  // Review 2026-11-05: every earlier boundary had a whole-number ratio x target, so rounding the
+  // tolerance (ceil, floor, round) would have passed. Target 10: tolerance is exactly 2.5 caps.
+  it("does not round a fractional tolerance", () => {
+    const t = synthetic({ value: 10 });
+    expect(compare(synthetic({ value: 12 }), t, cfg).value.state).toBe("close");
+    expect(compare(synthetic({ value: 8 }), t, cfg).value.state).toBe("close");
+    expect(compare(synthetic({ value: 13 }), t, cfg).value.state).toBe("miss");
+    expect(compare(synthetic({ value: 7 }), t, cfg).value.state).toBe("miss");
+    // Weight: target 2.5 lb, tolerance 0.625 lb. 3.12 lb is inside, 3.13 lb outside.
+    const w = synthetic({ weight: 2.5 });
+    expect(compare(synthetic({ weight: 3.12 }), w, cfg).weight.state).toBe("close");
+    expect(compare(synthetic({ weight: 3.13 }), w, cfg).weight.state).toBe("miss");
+  });
+
+  it("measures the band around the target, not the guess", () => {
+    // Target 80: band 20. Guess 101 is 21 away: a miss. Around the guess (band 25) it would be close.
+    expect(compare(synthetic({ value: 80 }), synthetic({ value: 100 }), cfg).value.state).toBe(
+      "close",
+    );
+    expect(compare(synthetic({ value: 125 }), synthetic({ value: 100 }), cfg).value.state).toBe(
+      "close",
+    );
+    expect(compare(synthetic({ value: 100 }), synthetic({ value: 80 }), cfg).value.state).toBe(
+      "close",
+    );
+    expect(compare(synthetic({ value: 101 }), synthetic({ value: 80 }), cfg).value.state).toBe(
+      "miss",
+    );
   });
 
   it("total components: close within 1; unique types has no close state", () => {

@@ -2,13 +2,18 @@
 
 import type { Item } from "./types";
 
-/** Case-, accent- and apostrophe-insensitive form used for matching. */
+/**
+ * Case-, accent- and punctuation-insensitive form used for matching. Apostrophes (every common
+ * form) are dropped; hyphens, dashes and full stops become spaces, so "nuka cola" finds
+ * "Nuka-Cola bottle" and "mr handy" finds "Mr. Handy fuel".
+ */
 export function normalizeName(text: string): string {
   return text
     .normalize("NFKD")
     .replace(/[̀-ͯ]/g, "")
     .toLowerCase()
-    .replace(/['’]/g, "")
+    .replace(/['`‘’ʼ]/g, "")
+    .replace(/[-.‐-―]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -32,14 +37,14 @@ export function searchItems(
     const name = normalizeName(item.name);
     const at = name.indexOf(q);
     if (at < 0) continue;
-    const wordStart = name.startsWith(q) || name.includes(` ${q}`) || name.includes(`-${q}`);
+    const wordStart = name.startsWith(q) || name.includes(` ${q}`);
     ranked.push({ item, name, rank: at === 0 ? 0 : wordStart ? 1 : 2 });
   }
   ranked.sort((a, b) => a.rank - b.rank || (a.name < b.name ? -1 : a.name > b.name ? 1 : 0));
   return ranked.slice(0, limit).map((r) => r.item);
 }
 
-/** The item whose name is exactly `text`, ignoring case, accents and apostrophes; else null. */
+/** The item whose name is exactly `text`, compared in normalizeName() form; else null. */
 export function findItemByName(text: string, items: Item[]): Item | null {
   const q = normalizeName(text);
   return (q && items.find((i) => normalizeName(i.name) === q)) || null;

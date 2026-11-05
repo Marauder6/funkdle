@@ -20,7 +20,7 @@ export interface RawRow {
   weightText: string;
   components: RawComponent[];
   formIds: string[];
-  /** Titles of the wiki's marker icons beside the name, e.g. "Cut content". */
+  /** Titles of the wiki's marker icons anywhere in the row, e.g. "Cut content". */
   markers: string[];
   /** Anything in the row the parser could not read. Non-empty means the row needs a decision. */
   problems: string[];
@@ -127,12 +127,42 @@ function headingText($: cheerio.CheerioAPI, el: AnyNode): string {
     .trim();
 }
 
+/** Every character a real item name uses. Anything else is reported, never slugged blindly. */
+const NAME_PATTERN = /^[A-Za-z0-9][A-Za-z0-9 '’.,&#()!/:+-]*$/;
+
+/**
+ * Text a reader never sees on the page, or that is not part of the value: hidden sort keys,
+ * footnote markers. Removed before any cell is read.
+ */
+const NOISE = [
+  '[style*="display:none"]',
+  '[style*="display: none"]',
+  ".sortkey",
+  "sup.reference",
+  ".reference",
+].join(", ");
+
+export interface ParsedPage {
+  rows: RawRow[];
+  /** Item tables read, by section, with their row counts (a table can have none). */
+  tablesRead: Array<{ section: string; rows: number }>;
+  /** Data tables (sortable or va-table) whose headers did not match an item table. */
+  unreadTables: Array<{ section: string; headers: string[] }>;
+}
+
 export function parseJunkTables(html: string): RawRow[] {
+  return parseJunkPage(html).rows;
+}
+
+export function parseJunkPage(html: string): ParsedPage {
   const $ = cheerio.load(html);
+  $(NOISE).remove();
   const rows: RawRow[] = [];
+  const tablesRead: ParsedPage["tablesRead"] = [];
+  const unreadTables: ParsedPage["unreadTables"] = [];
   let section = "";
 
-  $("h2, h3, table").each((_, el) => {
+  $("h2, h3, h4, table").each((_, el) => {
     if (el.type !== "tag") return;
     if (el.name !== "table") {
       section = headingText($, el);
@@ -142,8 +172,10 @@ export function parseJunkTables(html: string): RawRow[] {
     const headers = headerCells.toArray().map((c) => squash($(c).text()));
     const col = (h: string) => headers.indexOf(h);
     if (headers[0] !== "Name" || col("Components") < 0 || col("Value") < 0 || col("Weight") < 0) {
+      if ($(el).is(".sortable, .va-table")) unreadTables.push({ section, headers });
       return;
     }
+    const before = rows.length;
 
     $(el)
       .find("tr")
@@ -172,18 +204,21 @@ export function parseJunkTables(html: string): RawRow[] {
           }
         }
 
-        const nameCell = cells[col("Name")];
-        const markers = nameCell
-          ? $(nameCell)
-              .find(".va-icon[title]")
-              .toArray()
-              .map((icon) => $(icon).attr("title") ?? "")
-          : [];
+        // Marker icons can sit in any cell (one cut-content icon is in a Form ID cell).
+        const markers = $(tr)
+          .find(".va-icon[title]")
+          .toArray()
+          .map((icon) => $(icon).attr("title") ?? "");
+
+        const name = text("Name");
+        if (!NAME_PATTERN.test(name)) {
+          problems.push(`name "${name}" has characters item names never use`);
+        }
 
         rows.push({
           section,
           order: rows.length,
-          name: text("Name"),
+          name,
           valueText: text("Value"),
           weightText: text("Weight"),
           components: parsed.components,
@@ -192,6 +227,7 @@ export function parseJunkTables(html: string): RawRow[] {
           problems,
         });
       });
+    tablesRead.push({ section, rows: rows.length - before });
   });
-  return rows;
+  return { rows, tablesRead, unreadTables };
 }

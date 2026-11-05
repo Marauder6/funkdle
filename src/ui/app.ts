@@ -25,7 +25,7 @@ import { findItemByName, searchItems } from "../core/search";
 import { shareText } from "../core/share";
 import { recordDailyResult } from "../core/stats";
 import type { Dataset, Item } from "../core/types";
-import type { GameStorage } from "../storage/storage";
+import { KEY_PREFIX, type GameStorage, type SavedGame } from "../storage/storage";
 import { createCombobox } from "./combobox";
 import { createDialog } from "./dialog";
 import { h } from "./dom";
@@ -36,6 +36,8 @@ import { applySettings, createSettingsDialog } from "./settings";
 import { statsContent } from "./stats-view";
 
 const MAX_SUGGESTIONS = 8;
+/** How often an open page checks whether the local date has moved on. */
+const NEW_DAY_CHECK_MS = 30_000;
 
 const REJECTION_TEXT: Record<GuessRejection, string> = {
   "game-over": "This game is over.",
@@ -50,6 +52,12 @@ interface DailyState {
   unavailable: string | null;
 }
 
+/** The saved form matches the game in memory: same guesses, same limit. */
+const matchesSave = (saved: SavedGame, game: Game) =>
+  saved.limit === game.limit &&
+  saved.guessIds.length === game.guessIds.length &&
+  saved.guessIds.every((id, i) => id === game.guessIds[i]);
+
 export function startApp(
   root: HTMLElement,
   dataset: Dataset,
@@ -60,6 +68,8 @@ export function startApp(
   const items = dataset.items;
   const index = indexItems(items);
   const pool = items.filter((i) => i.inTargetPool);
+  const epoch = parseCalendarDate(schedule.epoch);
+  const todayPuzzle = () => puzzleNumber(localCalendarDate(clock()), epoch);
   const itemById = (id: string): Item => {
     const item = index.get(id);
     if (!item) throw new Error(`unknown item id "${id}"`);
@@ -69,8 +79,10 @@ export function startApp(
   let settings = storage.loadSettings();
   applySettings(settings);
   let mode: GameMode = "daily";
-  let daily = loadDaily();
+  let daily = loadDaily(todayPuzzle());
   let unlimited: Game | null = null;
+  /** The date moved on while a daily was in progress: offer the new one, don't snatch the old. */
+  let newDayWaiting = false;
   let revealNewest = false;
   let countdownTimer: ReturnType<typeof setInterval> | undefined;
 
@@ -88,12 +100,23 @@ export function startApp(
     onHint: (text) => (hint.textContent = text),
   });
   combo.input.setAttribute("aria-describedby", "guess-hint");
+  const newGameButton = h("button", { type: "button" }, "New game");
+  newGameButton.addEventListener("click", startNewUnlimited);
+  const newDayButton = h("button", { type: "button", class: "primary" }, "Play today's puzzle");
+  newDayButton.addEventListener("click", playToday);
+  const newDayNotice = h(
+    "p",
+    { class: "notice", hidden: true },
+    "A new daily puzzle has started. ",
+    newDayButton,
+  );
   const play = h(
     "section",
     { class: "play", "aria-label": "Make a guess" },
+    newDayNotice,
     combo.root,
     hint,
-    counter,
+    h("div", { class: "play-footer" }, counter, newGameButton),
   );
   const unavailablePanel = h("section", { class: "end", hidden: true });
   const endPanel = h("section", { class: "end", "aria-labelledby": "end-title", hidden: true });
@@ -191,10 +214,30 @@ export function startApp(
   render();
   showStorageHealth();
   if (!settings.helpSeen) {
-    help.open(helpButton);
+    help.open(play.hidden ? helpButton : combo.input);
     settings = { ...settings, helpSeen: true };
     storage.saveSettings(settings);
   }
+
+  // A page left open must notice a new day (the countdown alone misses it when timers sleep) and
+  // progress saved by another tab.
+  setInterval(checkNewDay, NEW_DAY_CHECK_MS);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState !== "hidden") checkNewDay();
+  });
+  window.addEventListener("pageshow", () => checkNewDay());
+  window.addEventListener("focus", () => checkNewDay());
+  window.addEventListener("storage", (e) => {
+    if (e.key !== null && !e.key.startsWith(KEY_PREFIX)) return;
+    if (e.key === null || e.key === `${KEY_PREFIX}settings`) {
+      settings = storage.loadSettings();
+      applySettings(settings);
+    }
+    if (syncFromStorage()) {
+      status.textContent = "Updated from another tab.";
+      render();
+    }
+  });
 
   // --- Games
 
@@ -204,10 +247,8 @@ export function startApp(
     return unlimited;
   }
 
-  /** Today's puzzle, rebuilt from its saved guesses. A finished one is (re)counted in stats. */
-  function loadDaily(): DailyState {
-    const epoch = parseCalendarDate(schedule.epoch);
-    const puzzle = puzzleNumber(localCalendarDate(clock()), epoch);
+  /** A puzzle rebuilt from its saved guesses. A finished one is (re)counted in stats. */
+  function loadDaily(puzzle: number): DailyState {
     if (puzzle < 1) {
       const start = new Date(epoch.year, epoch.month - 1, epoch.day).toLocaleDateString(undefined, {
         dateStyle: "long",
@@ -218,22 +259,28 @@ export function startApp(
         unavailable: `Daily puzzles start on ${start}. Until then, play Unlimited.`,
       };
     }
+    // Never log the id itself: it is the day's answer (SPEC 7).
     const targetId = dailyTargetId(puzzle, schedule);
-    if (!targetId || !index.get(targetId)?.inTargetPool) {
-      if (targetId)
-        console.warn(
-          `[funkdle violation] puzzle #${puzzle} target "${targetId}" is not in the pool`,
-        );
+    if (!targetId || !index.has(targetId)) {
+      if (targetId) console.warn(`[funkdle violation] puzzle #${puzzle}: scheduled item unknown`);
       return {
         puzzle,
         game: null,
         unavailable: "There's no daily puzzle for today yet. Unlimited mode is always open.",
       };
     }
-    const fresh = newGame({ mode: "daily", puzzle, targetId, limit: GUESS_LIMIT }, index);
+    // Everyone must get the same answer, so a scheduled item that a data update made ambiguous is
+    // still played; the schedule checks stop that reaching a future date.
+    if (!index.get(targetId)?.inTargetPool) {
+      console.warn(`[funkdle violation] puzzle #${puzzle}: scheduled item is not a unique answer`);
+    }
     const saved = storage.loadDaily(puzzle);
+    const fresh = newGame(
+      { mode: "daily", puzzle, targetId, limit: saved?.limit ?? GUESS_LIMIT },
+      index,
+    );
     const { game, problem } = saved
-      ? replayGame(fresh, saved, index, cfg)
+      ? replayGame(fresh, saved.guessIds, index, cfg)
       : { game: fresh, problem: null };
     if (problem) console.warn(`[funkdle] daily #${puzzle} partly restored: ${problem}`);
     countDaily(game);
@@ -246,13 +293,17 @@ export function startApp(
     if (after !== before) storage.saveStats(after);
   }
 
+  function saveUnlimited(game: Game) {
+    storage.saveUnlimited({ targetId: game.targetId, guessIds: game.guessIds, limit: game.limit });
+  }
+
   function freshUnlimited(avoidId?: string): Game {
     const target = pickUnlimitedTarget(pool, Math.random, avoidId);
     const g = newGame(
       { mode: "unlimited", puzzle: null, targetId: target.id, limit: GUESS_LIMIT },
       index,
     );
-    storage.saveUnlimited({ targetId: g.targetId, guessIds: g.guessIds });
+    saveUnlimited(g);
     return g;
   }
 
@@ -262,21 +313,69 @@ export function startApp(
     if (!saved) return null;
     const target = index.get(saved.targetId);
     if (!target?.inTargetPool) {
-      console.warn(
-        `[funkdle] saved game ignored: "${saved.targetId}" is no longer a possible answer`,
-      );
+      console.warn("[funkdle] saved Unlimited game ignored: its answer is no longer possible");
       return null;
     }
     const fresh = newGame(
-      { mode: "unlimited", puzzle: null, targetId: target.id, limit: GUESS_LIMIT },
+      { mode: "unlimited", puzzle: null, targetId: target.id, limit: saved.limit },
       index,
     );
     const { game: restored, problem } = replayGame(fresh, saved.guessIds, index, cfg);
-    if (problem) console.warn(`[funkdle] saved game partly restored: ${problem}`);
+    if (problem) console.warn(`[funkdle] saved Unlimited game partly restored: ${problem}`);
     return restored;
   }
 
+  /**
+   * Adopts progress another tab saved, so this tab never overwrites it with an older game.
+   * Returns true when this tab's game changed.
+   */
+  function syncFromStorage(): boolean {
+    let changed = false;
+    if (daily.game) {
+      const saved = storage.loadDaily(daily.puzzle);
+      if (saved && !matchesSave(saved, daily.game)) {
+        daily = loadDaily(daily.puzzle);
+        changed = true;
+      }
+    }
+    if (unlimited) {
+      const saved = storage.loadUnlimited();
+      if (saved && (saved.targetId !== unlimited.targetId || !matchesSave(saved, unlimited))) {
+        const restored = restoreUnlimited();
+        if (restored) {
+          unlimited = restored;
+          changed = true;
+        }
+      }
+    }
+    return changed;
+  }
+
+  /** Has the local date moved past the daily on show? Acts on it; returns true if it has. */
+  function checkNewDay(): boolean {
+    const today = todayPuzzle();
+    if (today === daily.puzzle) return false;
+    if (daily.game?.status === "in-progress") {
+      if (!newDayWaiting) {
+        newDayWaiting = true;
+        render();
+      }
+      return true;
+    }
+    daily = loadDaily(today);
+    newDayWaiting = false;
+    if (mode === "daily") status.textContent = "A new daily puzzle is ready.";
+    render();
+    return true;
+  }
+
   function guess(item: Item) {
+    if (syncFromStorage()) {
+      hint.textContent = "";
+      status.textContent = "This game was changed in another tab, so it has been updated here.";
+      render();
+      return;
+    }
     const game = current();
     if (!game) return;
     const outcome = submitGuess(game, item.id, index, cfg);
@@ -287,11 +386,11 @@ export function startApp(
     const next = outcome.game;
     if (next.mode === "daily" && next.puzzle !== null) {
       daily = { ...daily, game: next };
-      storage.saveDaily(next.puzzle, next.guessIds);
+      storage.saveDaily(next.puzzle, { guessIds: next.guessIds, limit: next.limit });
       countDaily(next);
     } else {
       unlimited = next;
-      storage.saveUnlimited({ targetId: next.targetId, guessIds: next.guessIds });
+      saveUnlimited(next);
     }
     showStorageHealth();
     hint.textContent = "";
@@ -314,6 +413,7 @@ export function startApp(
     mode = next;
     combo.clear();
     status.textContent = "";
+    checkNewDay();
     render();
     focusMain();
   }
@@ -321,13 +421,15 @@ export function startApp(
   function startNewUnlimited() {
     unlimited = freshUnlimited(unlimited?.targetId);
     showStorageHealth();
+    combo.clear();
     status.textContent = "New game started.";
     render();
     combo.input.focus();
   }
 
   function playToday() {
-    daily = loadDaily();
+    daily = loadDaily(todayPuzzle());
+    newDayWaiting = false;
     mode = "daily";
     combo.clear();
     status.textContent = "";
@@ -347,9 +449,12 @@ export function startApp(
     dailyButton.textContent = daily.game ? `Daily #${daily.puzzle}` : "Daily";
     dailyButton.setAttribute("aria-pressed", String(mode === "daily"));
     unlimitedButton.setAttribute("aria-pressed", String(mode === "unlimited"));
+    newDayNotice.hidden = !(mode === "daily" && newDayWaiting);
+    newGameButton.hidden = mode !== "unlimited";
 
     const game = current();
     unavailablePanel.hidden = game !== null;
+    stopCountdown();
     if (!game) {
       const toUnlimited = h("button", { type: "button", class: "primary" }, "Play Unlimited");
       toUnlimited.addEventListener("click", () => switchMode("unlimited"));
@@ -357,7 +462,6 @@ export function startApp(
       play.hidden = true;
       endPanel.hidden = true;
       historyHost.replaceChildren();
-      stopCountdown();
       return;
     }
 
@@ -375,7 +479,6 @@ export function startApp(
     revealNewest = false;
 
     endPanel.hidden = !over;
-    stopCountdown();
     if (over) endPanel.replaceChildren(...endPanelContent(game));
   }
 
@@ -449,20 +552,17 @@ export function startApp(
     }
   }
 
+  /**
+   * Counts down to local midnight. Each later tick compares the date itself (checkNewDay); the
+   * first display does not, because it runs inside render() and must not re-render.
+   */
   function startCountdown(el: HTMLElement) {
-    const tick = () => {
-      const ms = msUntilNextLocalMidnight(clock());
-      if (ms > 1000) {
-        el.textContent = `Next puzzle in ${formatCountdown(ms)}`;
-        return;
-      }
-      stopCountdown();
-      const go = h("button", { type: "button", class: "primary" }, "Play today's puzzle");
-      go.addEventListener("click", playToday);
-      el.replaceChildren("A new puzzle is ready. ", go);
-    };
-    tick();
-    countdownTimer = setInterval(tick, 1000);
+    const show = () =>
+      (el.textContent = `Next puzzle in ${formatCountdown(msUntilNextLocalMidnight(clock()))}`);
+    show();
+    countdownTimer = setInterval(() => {
+      if (!checkNewDay()) show();
+    }, 1000);
   }
 
   function stopCountdown() {

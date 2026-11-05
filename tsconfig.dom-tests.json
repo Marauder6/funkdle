@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["vite/client", "node"]
+  },
+  "include": ["tests/**/*.dom.test.ts", "tests/fixtures.ts", "src"]
+}

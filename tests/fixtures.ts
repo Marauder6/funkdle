@@ -1,7 +1,12 @@
 import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import type { Dataset, Item } from "../src/core/types";
 
-export const ITEMS_JSON = readFileSync(new URL("../data/items.json", import.meta.url), "utf8");
+// A path, not new URL(): in DOM test files URL is the DOM's, which node:fs rejects.
+export const ITEMS_JSON = readFileSync(
+  join(import.meta.dirname, "..", "data", "items.json"),
+  "utf8",
+);
 export const dataset = JSON.parse(ITEMS_JSON) as Dataset;
 
 /** A real stored item, by display name (U-check-tests-guarantee: no transcribed fixtures). */

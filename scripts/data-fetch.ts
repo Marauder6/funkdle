@@ -4,7 +4,8 @@
 import { createHash } from "node:crypto";
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { RAW_DIR, type RawMetadata, type RawSourceOk } from "./lib/raw";
+import { planSnapshot } from "./lib/fetch";
+import { RAW_DIR, type RawSourceOk } from "./lib/raw";
 
 const USER_AGENT =
   "FunkdleDataPipeline/0.1 (fan game data snapshot; https://github.com/Marauder6/funkdle)";
@@ -75,36 +76,14 @@ async function fetchPage(source: Source): Promise<{ html: string; meta: RawSourc
 }
 
 async function main(): Promise<void> {
-  await mkdir(RAW_DIR, { recursive: true });
-  const metadata: RawMetadata = { sources: {} };
-  let primaryFailed = false;
-
-  // Sequential on purpose: polite fetching, one request per page, no parallelism.
-  for (const source of SOURCES) {
-    try {
-      const { html, meta } = await fetchPage(source);
-      await writeFile(join(RAW_DIR, meta.file), html, "utf8");
-      metadata.sources[source.key] = meta;
-      console.log(`${source.key}: "${meta.title}" rev ${meta.revisionId}, ${meta.bytes} bytes`);
-    } catch (err) {
-      const reason = err instanceof Error ? err.message : String(err);
-      metadata.sources[source.key] = {
-        role: source.role,
-        failed: true,
-        reason,
-        attemptedAt: new Date().toISOString(),
-      };
-      if (source.role === "primary") primaryFailed = true;
-      console.error(`${source.role === "primary" ? "FAILED" : "DEGRADED"}: ${reason}`);
-    }
-  }
-
-  if (primaryFailed) {
-    console.error("Primary source failed; metadata.json not written, snapshot unchanged.");
+  const plan = await planSnapshot(SOURCES, fetchPage);
+  for (const line of plan.log) console.log(line);
+  if (plan.primaryFailed) {
     process.exitCode = 1;
     return;
   }
-  await writeFile(join(RAW_DIR, "metadata.json"), JSON.stringify(metadata, null, 2) + "\n", "utf8");
+  await mkdir(RAW_DIR, { recursive: true });
+  for (const w of plan.writes) await writeFile(join(RAW_DIR, w.file), w.content, "utf8");
 }
 
 await main();

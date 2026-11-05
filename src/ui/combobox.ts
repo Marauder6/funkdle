@@ -54,6 +54,8 @@ export function createCombobox(opts: ComboboxOptions): Combobox {
   let options: Item[] = [];
   let active = -1;
   let open = false;
+  /** The player moved the highlight with the arrow keys since typing. */
+  let navigated = false;
   const optionId = (i: number) => `${listId}-${i}`;
 
   function render() {
@@ -85,6 +87,7 @@ export function createCombobox(opts: ComboboxOptions): Combobox {
     options = query.trim() ? opts.search(query) : [];
     active = options.length ? 0 : -1;
     open = options.length > 0;
+    navigated = false;
     opts.onHint(query.trim() && !options.length ? "No items match. Check the spelling." : "");
     render();
   }
@@ -111,17 +114,24 @@ export function createCombobox(opts: ComboboxOptions): Combobox {
         e.preventDefault();
         if (!open && options.length) open = true;
         else if (options.length) active = (active + 1) % options.length;
+        navigated = true;
         render();
         break;
       case "ArrowUp":
         e.preventDefault();
         if (!open && options.length) open = true;
         else if (options.length) active = active <= 0 ? options.length - 1 : active - 1;
+        navigated = true;
         render();
         break;
       case "Enter": {
         e.preventDefault();
-        const picked = open && active >= 0 ? options[active] : opts.resolve(input.value);
+        // An option the player arrowed to wins; otherwise an exact name wins over the first
+        // suggestion, even one already guessed (search hides it), so the game can reject it
+        // instead of submitting a longer name that contains it.
+        const highlighted = open && active >= 0 ? options[active] : undefined;
+        const picked =
+          (navigated ? highlighted : undefined) ?? opts.resolve(input.value) ?? highlighted;
         if (picked) choose(picked);
         else if (input.value.trim()) opts.onHint("That isn't an item. Pick one from the list.");
         break;

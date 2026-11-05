@@ -19,7 +19,7 @@ import {
   slugify,
 } from "./normalize";
 import type { ExcludeOverride, FixOverride, Overrides } from "./overrides";
-import { parseJunkTables, type RawRow } from "./parse";
+import { parseJunkPage, type RawRow } from "./parse";
 import type { RawSourceOk } from "./raw";
 
 export interface RowSummary {
@@ -114,10 +114,26 @@ export function buildDataset(
   overrides: Overrides,
   opts: { includeCreationClub: boolean },
 ): BuildResult {
-  const rows = parseJunkTables(html);
+  const page = parseJunkPage(html);
+  const rows = page.rows;
   const problems: string[] = [];
   const exclusions: Exclusion[] = [];
   const label = (r: { section: string; name: string }) => `${r.section} / ${r.name}`;
+
+  // A page whose layout changed must fail here, not lose items quietly.
+  for (const t of page.unreadTables) {
+    if (SECTION_ORIGIN[t.section]) {
+      problems.push(
+        `a table under "${t.section}" was not read: its headers are [${t.headers.join(", ")}]`,
+      );
+    }
+  }
+  for (const t of page.tablesRead) {
+    if (t.rows === 0) problems.push(`the item table under "${t.section}" has no rows`);
+  }
+  if (!rows.some((r) => r.section === "Base game")) {
+    problems.push('no "Base game" rows were read: the page layout may have changed');
+  }
 
   // Resolve every override against the raw rows first: one that matches nothing, or more than
   // one row, is stale or ambiguous and fails the build.
@@ -138,8 +154,13 @@ export function buildDataset(
   }
   for (const o of overrides.fix) {
     const row = resolve(o, "fix");
-    if (row) fixesFor.set(row, [...(fixesFor.get(row) ?? []), o]);
+    if (row && excludedBy.has(row)) {
+      problems.push(`fix for "${o.name}" targets a row that an override also excluded`);
+    } else if (row) {
+      fixesFor.set(row, [...(fixesFor.get(row) ?? []), o]);
+    }
   }
+  const fixesApplied: FixOverride[] = [];
 
   const rowsPerSection: Record<string, number> = {};
   const normRows: NormRow[] = [];
@@ -156,7 +177,7 @@ export function buildDataset(
       continue;
     }
     // Owner's decision 2026-11-05: items players cannot normally obtain are out of both sets.
-    if (raw.markers.includes(CUT_CONTENT)) {
+    if (raw.markers.some((m) => m.trim().toLowerCase() === CUT_CONTENT.toLowerCase())) {
       exclusions.push({
         name: raw.name,
         section: raw.section,
@@ -186,6 +207,7 @@ export function buildDataset(
       else if (fix.field === "value") row.valueText = fix.to;
       else if (fix.field === "weight") row.weightText = fix.to;
       else row.components = parseComponentsText(fix.to);
+      fixesApplied.push(fix);
     }
 
     const origin = SECTION_ORIGIN[row.section];
@@ -320,7 +342,7 @@ export function buildDataset(
       exclusions,
       merges,
       conflicts,
-      fixesApplied: overrides.fix,
+      fixesApplied,
     },
   };
 }

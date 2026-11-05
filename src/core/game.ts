@@ -91,7 +91,8 @@ export function replayGame(
   for (const [i, id] of guessIds.entries()) {
     const outcome = submitGuess(game, id, index, cfg);
     if (!outcome.ok) {
-      return { game, problem: `saved guess ${i + 1} ("${id}") rejected: ${outcome.reason}` };
+      // No id in the message: the rejected guess can be the answer, and this text gets logged.
+      return { game, problem: `saved guess ${i + 1} rejected: ${outcome.reason}` };
     }
     game = outcome.game;
   }

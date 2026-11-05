@@ -6,7 +6,8 @@ import { h } from "./dom";
 export interface Dialog {
   element: HTMLDialogElement;
   setContent(...nodes: Node[]): void;
-  open(opener: HTMLElement): void;
+  /** `returnFocusTo` gets focus back when the dialog closes: usually the button that opened it. */
+  open(returnFocusTo: HTMLElement): void;
 }
 
 export function createDialog(id: string, title: string, onClose?: () => void): Dialog {
@@ -26,9 +27,16 @@ export function createDialog(id: string, title: string, onClose?: () => void): D
   let opener: HTMLElement | null = null;
 
   close.addEventListener("click", () => element.close());
-  // A click on the backdrop lands on the dialog element itself, outside the padded body.
+  // A click on the backdrop lands on the dialog element itself, outside the padded body. So does
+  // the click that ends a text selection dragged out of the body, so the press must have started
+  // on the backdrop too.
+  let pressedOnBackdrop = false;
+  element.addEventListener("pointerdown", (e) => {
+    pressedOnBackdrop = e.target === element;
+  });
   element.addEventListener("click", (e) => {
-    if (e.target === element) element.close();
+    if (e.target === element && pressedOnBackdrop) element.close();
+    pressedOnBackdrop = false;
   });
   element.addEventListener("close", () => {
     opener?.focus();
@@ -38,8 +46,8 @@ export function createDialog(id: string, title: string, onClose?: () => void): D
   return {
     element,
     setContent: (...nodes) => content.replaceChildren(...nodes),
-    open(from) {
-      opener = from;
+    open(returnFocusTo) {
+      opener = returnFocusTo;
       element.showModal();
       // Start at the top: focusing the first button would scroll a long dialog to its end.
       element.scrollTop = 0;

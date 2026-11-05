@@ -1,5 +1,9 @@
 {
   "epoch": "2026-11-05",
+  "cycleStarts": [
+    0,
+    256
+  ],
   "entries": [
     "cracked-deathclaw-egg",
     "toothpaste",

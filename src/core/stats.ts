@@ -30,7 +30,8 @@ export function recordDailyResult(stats: Stats, game: Game): Stats {
   if (stats.lastCountedPuzzle !== null && game.puzzle <= stats.lastCountedPuzzle) return stats;
 
   const won = game.status === "won";
-  const continues = stats.lastCountedPuzzle === game.puzzle - 1 && stats.currentStreak > 0;
+  // Yesterday's result was counted: build on its streak (0 after a loss, so a win makes 1).
+  const continues = stats.lastCountedPuzzle === game.puzzle - 1;
   const currentStreak = won ? (continues ? stats.currentStreak + 1 : 1) : 0;
   const distribution = [...stats.distribution];
   if (won) {

@@ -111,10 +111,22 @@ export function browserStore(
   };
 }
 
-export interface SavedUnlimited {
-  targetId: string;
+/** A game's guesses and the guess limit it was played under, so a later limit change cannot
+ *  reopen a lost game or end one early. */
+export interface SavedGame {
   guessIds: string[];
+  limit: number;
 }
+
+export interface SavedUnlimited extends SavedGame {
+  targetId: string;
+}
+
+/** Saves from before the limit was stored (launch day, 2026-11-05) were played with 6 guesses. */
+export const LEGACY_GUESS_LIMIT = 6;
+
+/** No limit will ever be this high; a longer stats distribution is corrupt. */
+const MAX_DISTRIBUTION = 50;
 
 export { EMPTY_STATS, type Stats };
 
@@ -138,18 +150,50 @@ const isStringArray = (v: unknown): v is string[] =>
 const isRecord = (v: unknown): v is Record<string, unknown> =>
   typeof v === "object" && v !== null && !Array.isArray(v);
 
-const isSavedUnlimited = (v: unknown): v is SavedUnlimited =>
-  isRecord(v) && typeof v.targetId === "string" && isStringArray(v.guessIds);
+const isLimit = (v: unknown): v is number =>
+  Number.isInteger(v) && (v as number) >= 1 && (v as number) <= MAX_DISTRIBUTION;
 
-const isStats = (v: unknown): v is Stats =>
-  isRecord(v) &&
-  isCount(v.played) &&
-  isCount(v.wins) &&
-  isCount(v.currentStreak) &&
-  isCount(v.maxStreak) &&
-  (v.lastCountedPuzzle === null || Number.isInteger(v.lastCountedPuzzle)) &&
-  Array.isArray(v.distribution) &&
-  v.distribution.every(isCount);
+/** Current form, or the launch-day form: a bare list of guess ids. */
+function asSavedGame(v: unknown): SavedGame | null {
+  if (isStringArray(v)) return { guessIds: v, limit: LEGACY_GUESS_LIMIT };
+  if (isRecord(v) && isStringArray(v.guessIds) && isLimit(v.limit)) {
+    return { guessIds: v.guessIds, limit: v.limit };
+  }
+  return null;
+}
+
+function asSavedUnlimited(v: unknown): SavedUnlimited | null {
+  if (!isRecord(v) || typeof v.targetId !== "string" || !isStringArray(v.guessIds)) return null;
+  if (v.limit === undefined)
+    return { targetId: v.targetId, guessIds: v.guessIds, limit: LEGACY_GUESS_LIMIT };
+  return isLimit(v.limit) ? { targetId: v.targetId, guessIds: v.guessIds, limit: v.limit } : null;
+}
+
+/** Shape and meaning: every field a count, and the fields agree with each other. */
+const isStats = (v: unknown): v is Stats => {
+  if (
+    !isRecord(v) ||
+    !isCount(v.played) ||
+    !isCount(v.wins) ||
+    !isCount(v.currentStreak) ||
+    !isCount(v.maxStreak) ||
+    !(v.lastCountedPuzzle === null || Number.isInteger(v.lastCountedPuzzle)) ||
+    !Array.isArray(v.distribution) ||
+    v.distribution.length > MAX_DISTRIBUTION ||
+    !v.distribution.every(isCount)
+  ) {
+    return false;
+  }
+  const distributed = (v.distribution as number[]).reduce((a, b) => a + b, 0);
+  return (
+    v.wins <= v.played &&
+    distributed === v.wins &&
+    v.currentStreak <= v.maxStreak &&
+    v.maxStreak <= v.wins &&
+    (v.wins === 0) === (v.maxStreak === 0) &&
+    (v.played === 0) === (v.lastCountedPuzzle === null)
+  );
+};
 
 const isSettings = (v: unknown): v is Settings =>
   isRecord(v) &&
@@ -168,55 +212,69 @@ export class GameStorage {
     return this.store.health;
   }
 
-  private read<T>(key: string, valid: (v: unknown) => v is T): T | null {
+  /** Parses and converts a saved value; `convert` returns null for anything it does not accept. */
+  private read<T>(key: string, convert: (v: unknown) => T | null): T | null {
     const raw = this.store.get(KEY_PREFIX + key);
     if (raw === null) return null;
+    let value: unknown;
     try {
-      const value: unknown = JSON.parse(raw);
-      if (valid(value)) return value;
+      value = JSON.parse(raw);
+    } catch {
+      // The parser's message quotes the start of the text, which can be an answer id: leave it out.
       this.report({
         severity: "violation",
-        message: `saved "${key}" has an unexpected shape and was ignored`,
+        message: `saved "${key}" is not valid JSON and was ignored`,
       });
-    } catch (err) {
+      return null;
+    }
+    const converted = convert(value);
+    if (converted === null) {
       this.report({
         severity: "violation",
-        message: `saved "${key}" is not valid JSON and was ignored (${String(err)})`,
+        message: `saved "${key}" has an unexpected shape or inconsistent values and was ignored`,
       });
     }
-    return null;
+    return converted;
+  }
+
+  private readValid<T>(key: string, valid: (v: unknown) => v is T): T | null {
+    return this.read(key, (v) => (valid(v) ? v : null));
   }
 
   private write(key: string, value: unknown): void {
     this.store.set(KEY_PREFIX + key, JSON.stringify(value));
   }
 
-  loadDaily(puzzle: number): string[] | null {
-    return this.read(`daily:${puzzle}`, isStringArray);
+  loadDaily(puzzle: number): SavedGame | null {
+    return this.read(`daily:${puzzle}`, asSavedGame);
   }
-  saveDaily(puzzle: number, guessIds: readonly string[]): void {
-    this.write(`daily:${puzzle}`, guessIds);
+  saveDaily(puzzle: number, game: SavedGame): void {
+    this.write(`daily:${puzzle}`, { guessIds: game.guessIds, limit: game.limit });
   }
 
   loadUnlimited(): SavedUnlimited | null {
-    return this.read("unlimited", isSavedUnlimited);
+    return this.read("unlimited", asSavedUnlimited);
   }
   saveUnlimited(game: SavedUnlimited): void {
-    this.write("unlimited", { targetId: game.targetId, guessIds: game.guessIds });
+    this.write("unlimited", {
+      targetId: game.targetId,
+      guessIds: game.guessIds,
+      limit: game.limit,
+    });
   }
   clearUnlimited(): void {
     this.store.remove(KEY_PREFIX + "unlimited");
   }
 
   loadStats(): Stats {
-    return this.read("stats", isStats) ?? { ...EMPTY_STATS, distribution: [] };
+    return this.readValid("stats", isStats) ?? { ...EMPTY_STATS, distribution: [] };
   }
   saveStats(stats: Stats): void {
     this.write("stats", stats);
   }
 
   loadSettings(): Settings {
-    return this.read("settings", isSettings) ?? { ...DEFAULT_SETTINGS };
+    return this.readValid("settings", isSettings) ?? { ...DEFAULT_SETTINGS };
   }
   saveSettings(settings: Settings): void {
     this.write("settings", settings);

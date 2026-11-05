@@ -32,6 +32,23 @@ describe("fingerprint", () => {
       for (const g of items) expect(isSolved(compare(g, t, cfg))).toBe(g.id === t.id);
     }
   });
+
+  // Review 2026-11-05: the pool test above uses fingerprint() itself, so a fingerprint missing a
+  // field would pass it. This checks fingerprint against compare() for every ordered pair.
+  it("two items share a fingerprint exactly when guessing one against the other is all-match", () => {
+    let mismatches = 0;
+    let equalPairs = 0;
+    for (const a of items) {
+      const fa = fingerprint(a);
+      for (const b of items) {
+        const same = fa === fingerprint(b);
+        if (same) equalPairs++;
+        if (isSolved(compare(a, b, cfg)) !== same) mismatches++;
+      }
+    }
+    expect(mismatches).toBe(0);
+    expect(equalPairs).toBeGreaterThan(items.length); // collisions exist, so the check has teeth
+  }, 120_000); // 305k comparisons: about a second normally, far longer under mutation testing
 });
 
 describe("filterCandidates", () => {
@@ -86,5 +103,43 @@ describe("simulation agrees with core", () => {
       expect(greedy.play(t)).toBeGreaterThanOrEqual(1);
       expect(playConsistentRandom(matrix, t, rand)).toBeGreaterThanOrEqual(1);
     }
+  });
+
+  // Review 2026-11-05: ">= 1" cannot fail. These pin the counts exactly.
+  it("a first-guess hit counts as one guess", () => {
+    const greedy = makeGreedyPlayer(matrix);
+    expect(greedy.play(greedy.firstGuess())).toBe(1);
+    // rand() = 0 always picks the first candidate, index 0
+    expect(playConsistentRandom(matrix, 0, () => 0)).toBe(1);
+  });
+
+  it("consistent-random plays exactly like a reference player built on filterCandidates", () => {
+    const reference = (target: Item, rand: () => number): number => {
+      const history: Array<[Item, Feedback]> = [];
+      for (let turn = 1; turn <= items.length; turn++) {
+        const cands = filterCandidates(items, history, cfg);
+        const guess = cands[Math.floor(rand() * cands.length)]!;
+        if (guess.id === target.id) return turn;
+        history.push([guess, compare(guess, target, cfg)]);
+      }
+      throw new Error("reference player did not finish");
+    };
+    for (const [seed, target] of pool.slice(0, 12).entries()) {
+      const t = index.get(target.id)!;
+      expect(playConsistentRandom(matrix, t, prng(seed + 100))).toBe(
+        reference(target, prng(seed + 100)),
+      );
+    }
+  });
+
+  it("greedy finds a known short game", () => {
+    // The greedy first guess splits the field so finely that most targets need 2-3 guesses; the
+    // audit reports a mean of 2.61. A broken counter or a broken narrowing step moves this.
+    const greedy = makeGreedyPlayer(matrix);
+    const lengths = pool.slice(0, 60).map((t) => greedy.play(index.get(t.id)!));
+    const mean = lengths.reduce((a, b) => a + b, 0) / lengths.length;
+    expect(mean).toBeGreaterThan(2);
+    expect(mean).toBeLessThan(3.2);
+    expect(Math.max(...lengths)).toBeLessThanOrEqual(6);
   });
 });

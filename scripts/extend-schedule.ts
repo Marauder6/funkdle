@@ -6,10 +6,10 @@
 import { existsSync, readFileSync } from "node:fs";
 import { writeFile } from "node:fs/promises";
 import { parseArgs } from "node:util";
-import { parseCalendarDate, type Schedule } from "../src/core/daily";
+import { parseCalendarDate } from "../src/core/daily";
 import { DatasetSchema } from "../src/core/schema";
 import { ITEMS_PATH, SCHEDULE_PATH } from "./lib/raw";
-import { extendSchedule, scheduleProblems } from "./lib/schedule";
+import { extendSchedule, scheduleProblems, type ScheduleFile } from "./lib/schedule";
 import { prng } from "./lib/stats";
 
 /** The PRNG seed for each extension is this plus the number of existing entries. */
@@ -24,32 +24,49 @@ if (!Number.isInteger(days) || days < 1) {
   process.exit(1);
 }
 
-let schedule: Schedule;
+let schedule: ScheduleFile;
 if (existsSync(SCHEDULE_PATH)) {
   if (values.epoch) {
     console.error(`${SCHEDULE_PATH} exists; --epoch only applies when creating it.`);
     process.exit(1);
   }
-  schedule = JSON.parse(readFileSync(SCHEDULE_PATH, "utf8")) as Schedule;
+  schedule = JSON.parse(readFileSync(SCHEDULE_PATH, "utf8")) as ScheduleFile;
+  if (!Array.isArray(schedule.cycleStarts)) {
+    console.error(`${SCHEDULE_PATH} has no cycleStarts record; add it before extending.`);
+    process.exit(1);
+  }
 } else {
   if (!values.epoch) {
     console.error("no schedule yet: pass --epoch YYYY-MM-DD for puzzle #1");
     process.exit(1);
   }
   parseCalendarDate(values.epoch);
-  schedule = { epoch: values.epoch, entries: [] };
+  schedule = { epoch: values.epoch, cycleStarts: [], entries: [] };
 }
 
 const dataset = DatasetSchema.parse(JSON.parse(readFileSync(ITEMS_PATH, "utf8")));
 const pool = dataset.items.filter((i) => i.inTargetPool).map((i) => i.id);
 const before = schedule.entries.length;
-const entries = extendSchedule(schedule.entries, pool, days, prng(SCHEDULE_SEED + before));
-const next: Schedule = { epoch: schedule.epoch, entries };
+const extended = extendSchedule(schedule, pool, days, prng(SCHEDULE_SEED + before));
+const next: ScheduleFile = { epoch: schedule.epoch, ...extended };
 
-const problems = scheduleProblems(next, pool);
+// New entries must all be in today's pool; earlier ones only have to still exist.
+const problems = scheduleProblems(next, {
+  knownIds: dataset.items.map((i) => i.id),
+  poolIds: pool,
+  fromPuzzle: before + 1,
+});
 if (problems.length) {
   console.error(`refusing to write an invalid schedule:\n  ${problems.join("\n  ")}`);
   process.exit(1);
 }
-await writeFile(SCHEDULE_PATH, JSON.stringify(next, null, 2) + "\n", "utf8");
-console.log(`schedule: ${before} -> ${entries.length} entries from ${next.epoch}`);
+await writeFile(
+  SCHEDULE_PATH,
+  JSON.stringify(
+    { epoch: next.epoch, cycleStarts: next.cycleStarts, entries: next.entries },
+    null,
+    2,
+  ) + "\n",
+  "utf8",
+);
+console.log(`schedule: ${before} -> ${next.entries.length} entries from ${next.epoch}`);

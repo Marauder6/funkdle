@@ -40,12 +40,46 @@ describe("searchItems", () => {
   it("ignores apostrophes", () => {
     expect(names("danses holotags")).toEqual(["Danse's holotags"]);
   });
+
+  // Review 2026-11-05: 17 names contain "-" or "."; typing them with spaces found nothing.
+  it("treats hyphens and full stops as spaces", () => {
+    expect(names("nuka cola")).toContain("Nuka-Cola bottle");
+    expect(names("ball peen")).toEqual(["Ball-peen hammer"]);
+    expect(names("mr handy")).toEqual(["Mr. Handy fuel"]);
+    expect(names("pre war")).toEqual(["Pre-War lamp", "Pre-War Money"]);
+    expect(names("wooden block b")).toContain("Wooden block - B & Y");
+    // and the written form still works
+    expect(names("nuka-cola cup")).toContain("Nuka-Cola cup");
+  });
+
+  it("accepts every common apostrophe character", () => {
+    for (const apostrophe of ["'", "’", "‘", "ʼ", "`"]) {
+      expect(names(`danse${apostrophe}s holotags`), apostrophe).toEqual(["Danse's holotags"]);
+    }
+  });
+
+  it("orders each rank alphabetically, and every name prefix before every word start", () => {
+    const result = names("cup", new Set(), 50);
+    const rank = (n: string) =>
+      n.toLowerCase().startsWith("cup") ? 0 : /(^|[\s-])cup/i.test(n) ? 1 : 2;
+    const ranks = result.map(rank);
+    expect(ranks).toEqual([...ranks].sort((a, b) => a - b));
+    for (const r of [0, 1, 2]) {
+      const group = result.filter((n) => rank(n) === r);
+      expect(group).toEqual(
+        [...group].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())),
+      );
+    }
+    expect(new Set(ranks).size).toBeGreaterThanOrEqual(2);
+  });
 });
 
 describe("findItemByName", () => {
   it("resolves exact names regardless of case and spacing", () => {
     expect(findItemByName("  alarm   CLOCK ", items)?.id).toBe("alarm-clock");
     expect(findItemByName("Danses holotags", items)?.name).toBe("Danse's holotags");
+    expect(findItemByName("Nuka Cola bottle", items)?.name).toBe("Nuka-Cola bottle");
+    expect(findItemByName("mr handy fuel", items)?.name).toBe("Mr. Handy fuel");
   });
 
   it("rejects text that is not exactly an item name", () => {

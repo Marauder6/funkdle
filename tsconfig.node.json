@@ -4,5 +4,6 @@
     "lib": ["ES2023"],
     "types": ["node"]
   },
-  "include": ["scripts", "tests", "src/core", "vite.config.ts"]
+  "include": ["scripts", "tests", "src/core", "vite.config.ts"],
+  "exclude": ["tests/**/*.dom.test.ts"]
 }

@@ -257,6 +257,22 @@ h1 {
   color: var(--muted);
 }
 
+.play-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.play .notice {
+  margin: 0 0 12px;
+}
+
+.play .notice button {
+  margin-left: 8px;
+}
+
 /* --- Guess history. One structure: cards on phones, a table from 768 px. */
 
 /* The layout follows the history's own width (a container query), so the same table works on the

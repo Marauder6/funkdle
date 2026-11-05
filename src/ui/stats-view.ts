@@ -21,23 +21,19 @@ export function statsContent(
     );
 
   const rows = Math.max(limit, stats.distribution.length);
-  const most = Math.max(1, ...stats.distribution);
+  // reduce, not Math.max(...spread): a huge array would overflow the call stack.
+  const most = stats.distribution.reduce((a, b) => Math.max(a, b), 1);
   const bars = Array.from({ length: rows }, (_, i) => {
     const count = stats.distribution[i] ?? 0;
     const today = todayWin === i + 1;
+    const bar = h("span", { class: "dist-bar", "aria-hidden": "true" }, String(count));
+    // Through the CSSOM, not a style attribute: the Content-Security-Policy blocks those.
+    bar.style.width = `${Math.max(8, Math.round((100 * count) / most))}%`;
     return h(
       "li",
       { class: today ? "today" : null },
       h("span", { class: "dist-label", "aria-hidden": "true" }, String(i + 1)),
-      h(
-        "span",
-        {
-          class: "dist-bar",
-          style: `width: ${Math.max(8, Math.round((100 * count) / most))}%`,
-          "aria-hidden": "true",
-        },
-        String(count),
-      ),
+      bar,
       h(
         "span",
         { class: "sr-only" },

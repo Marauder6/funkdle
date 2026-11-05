@@ -3,6 +3,9 @@ name: CI
 on:
   push:
   pull_request:
+  # Weekly, so the schedule check warns about running out of puzzles even when nobody pushes.
+  schedule:
+    - cron: "17 13 * * 1"
 
 permissions:
   contents: read
@@ -11,8 +14,11 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+      # Actions are pinned to commit SHAs (tag in the comment): a moved tag cannot change what runs.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: .nvmrc
           cache: npm

@@ -22,13 +22,12 @@ function componentsCell(fb: Feedback): HTMLElement {
 }
 
 function guessRow(item: Item, fb: Feedback, reveal: boolean): HTMLElement {
-  const cells = cellViews(item, fb).map((view, i) =>
-    h(
+  const cells = cellViews(item, fb).map((view, i) => {
+    const cell = h(
       "div",
       {
         role: "cell",
         class: `cell col-${view.column} state-${view.state}${reveal ? " reveal" : ""}`,
-        style: reveal ? `--i: ${i + 1}` : null,
       },
       h("span", { class: "cell-title", "aria-hidden": "true" }, COLUMN_TITLE[view.column]),
       view.column === "components"
@@ -40,8 +39,11 @@ function guessRow(item: Item, fb: Feedback, reveal: boolean): HTMLElement {
         view.column === "components" ? marks(fb.components) : view.marks,
       ),
       srOnly(view.label),
-    ),
-  );
+    );
+    // Through the CSSOM, not a style attribute: the Content-Security-Policy blocks those.
+    if (reveal) cell.style.setProperty("--i", String(i + 1));
+    return cell;
+  });
   return h(
     "div",
     { role: "row", class: "guess" },
