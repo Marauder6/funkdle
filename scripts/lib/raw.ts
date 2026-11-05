@@ -8,6 +8,7 @@ export const ROOT = join(import.meta.dirname, "..", "..");
 export const RAW_DIR = join(ROOT, "pipeline", "raw");
 export const ITEMS_PATH = join(ROOT, "data", "items.json");
 export const AUDIT_PATH = join(ROOT, "data", "audit-report.md");
+export const SCHEDULE_PATH = join(ROOT, "data", "schedule.json");
 
 export interface RawSourceOk {
   role: "primary" | "cross-check";

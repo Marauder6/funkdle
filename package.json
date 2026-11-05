@@ -20,7 +20,9 @@
     "data:fetch": "tsx scripts/data-fetch.ts",
     "data:build": "tsx scripts/data-build.ts",
     "data:audit": "tsx scripts/data-audit.ts",
-    "data:simulate": "tsx scripts/simulate.ts"
+    "data:simulate": "tsx scripts/simulate.ts",
+    "schedule:extend": "tsx scripts/extend-schedule.ts",
+    "schedule:check": "tsx scripts/check-schedule.ts"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

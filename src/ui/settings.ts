@@ -1,7 +1,7 @@
-// Settings dialog (SPEC 9.1): colour-blind palette and a reduced-motion override. Changes apply
-// at once and are saved.
+// Settings (SPEC 9.1): colour-blind palette and a reduced-motion override. Changes apply at once.
 
 import type { Settings } from "../storage/storage";
+import { createDialog, type Dialog } from "./dialog";
 import { h } from "./dom";
 
 export function applySettings(settings: Settings): void {
@@ -12,43 +12,34 @@ export function applySettings(settings: Settings): void {
 
 export function createSettingsDialog(
   initial: Settings,
-  opener: HTMLButtonElement,
-  onChange: (next: Settings) => void,
-): HTMLDialogElement {
+  onChange: (change: Pick<Settings, "colorBlind" | "motion">) => void,
+): Dialog {
   const colorBlind = h("input", { type: "checkbox", id: "setting-colorblind" });
   colorBlind.checked = initial.colorBlind;
   const reduceMotion = h("input", { type: "checkbox", id: "setting-motion" });
   reduceMotion.checked = initial.motion === "reduce";
-  const close = h("button", { type: "button" }, "Close");
 
-  const dialog = h(
-    "dialog",
-    { class: "dialog", "aria-labelledby": "settings-title" },
+  const dialog = createDialog("settings", "Settings");
+  dialog.setContent(
     h(
       "div",
-      { class: "dialog-body" },
-      h("h2", { id: "settings-title" }, "Settings"),
+      { class: "setting" },
+      colorBlind,
       h(
-        "div",
-        { class: "setting" },
-        colorBlind,
-        h(
-          "label",
-          { for: "setting-colorblind" },
-          "Colour-blind palette: blue for a match, orange for close",
-        ),
+        "label",
+        { for: "setting-colorblind" },
+        "Colour-blind palette: blue for a match, orange for close",
       ),
+    ),
+    h(
+      "div",
+      { class: "setting" },
+      reduceMotion,
       h(
-        "div",
-        { class: "setting" },
-        reduceMotion,
-        h(
-          "label",
-          { for: "setting-motion" },
-          "Reduce motion. Animations also stop when your device asks for reduced motion.",
-        ),
+        "label",
+        { for: "setting-motion" },
+        "Reduce motion. Animations also stop when your device asks for reduced motion.",
       ),
-      close,
     ),
   );
 
@@ -59,12 +50,5 @@ export function createSettingsDialog(
     });
   colorBlind.addEventListener("change", emit);
   reduceMotion.addEventListener("change", emit);
-  close.addEventListener("click", () => dialog.close());
-  // A click on the backdrop lands on the dialog element itself, outside the padded body.
-  dialog.addEventListener("click", (e) => {
-    if (e.target === dialog) dialog.close();
-  });
-  dialog.addEventListener("close", () => opener.focus());
-  opener.addEventListener("click", () => dialog.showModal());
   return dialog;
 }

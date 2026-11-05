@@ -56,6 +56,15 @@ export function localCalendarDate(now: Date): CalendarDate {
   return { year: now.getFullYear(), month: now.getMonth() + 1, day: now.getDate() };
 }
 
+/**
+ * Milliseconds until the next local midnight, for the countdown. The Date constructor finds the
+ * real local midnight, so a 23- or 25-hour day counts down correctly.
+ */
+export function msUntilNextLocalMidnight(now: Date): number {
+  const next = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  return next.getTime() - now.getTime();
+}
+
 /** Puzzle #1 is the epoch date. Dates before the epoch give 0 or less. */
 export function puzzleNumber(localDate: CalendarDate, epoch: CalendarDate): number {
   return dayNumber(localDate) - dayNumber(epoch) + 1;

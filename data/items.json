@@ -309,22 +309,6 @@
       "inTargetPool": true
     },
     {
-      "id": "angler-gunk",
-      "name": "Angler gunk",
-      "value": 0,
-      "weight": 0.5,
-      "components": {
-        "Adhesive": 3
-      },
-      "totalComponents": 3,
-      "uniqueComponents": 1,
-      "origin": "far-harbor",
-      "formIds": [
-        "xx0540FE"
-      ],
-      "inTargetPool": true
-    },
-    {
       "id": "annikas-locket",
       "name": "Annika's locket",
       "value": 24,
@@ -875,22 +859,6 @@
       "origin": "base",
       "formIds": [
         "0003F8C0"
-      ],
-      "inTargetPool": false
-    },
-    {
-      "id": "bond",
-      "name": "Bond",
-      "value": 1,
-      "weight": 0.1,
-      "components": {
-        "Cloth": 1
-      },
-      "totalComponents": 1,
-      "uniqueComponents": 1,
-      "origin": "far-harbor",
-      "formIds": [
-        "xx045E25"
       ],
       "inTargetPool": false
     },
@@ -4590,22 +4558,6 @@
       "inTargetPool": false
     },
     {
-      "id": "land-grant",
-      "name": "Land grant",
-      "value": 1,
-      "weight": 0.1,
-      "components": {
-        "Cloth": 1
-      },
-      "totalComponents": 1,
-      "uniqueComponents": 1,
-      "origin": "far-harbor",
-      "formIds": [
-        "xx045E6D"
-      ],
-      "inTargetPool": false
-    },
-    {
       "id": "lantern",
       "name": "Lantern",
       "value": 15,
@@ -4985,22 +4937,6 @@
         "001AAD69"
       ],
       "inTargetPool": true
-    },
-    {
-      "id": "manuscript",
-      "name": "Manuscript",
-      "value": 1,
-      "weight": 0.1,
-      "components": {
-        "Cloth": 1
-      },
-      "totalComponents": 1,
-      "uniqueComponents": 1,
-      "origin": "far-harbor",
-      "formIds": [
-        "xx045E6B"
-      ],
-      "inTargetPool": false
     },
     {
       "id": "masonry-hammer",
@@ -6124,22 +6060,6 @@
       "origin": "base",
       "formIds": [
         "000E3770"
-      ],
-      "inTargetPool": false
-    },
-    {
-      "id": "property-deed",
-      "name": "Property deed",
-      "value": 1,
-      "weight": 0.1,
-      "components": {
-        "Cloth": 1
-      },
-      "totalComponents": 1,
-      "uniqueComponents": 1,
-      "origin": "far-harbor",
-      "formIds": [
-        "xx045E20"
       ],
       "inTargetPool": false
     },

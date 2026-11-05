@@ -21,6 +21,9 @@ export const DEFAULT_FEEDBACK: FeedbackConfig = {
   totalCloseWithin: 1,
 };
 
+/** Where the game lives (SPEC 13.8: repo "funkdle" on GitHub Pages). Ends every share text. */
+export const SITE_URL = "https://marauder6.github.io/funkdle/";
+
 /** SPEC 3.3, decided at the Phase 1 gate: 6 for now, revisit after real play. */
 export const GUESS_LIMIT = 6;
 

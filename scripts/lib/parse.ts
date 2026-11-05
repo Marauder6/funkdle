@@ -20,6 +20,8 @@ export interface RawRow {
   weightText: string;
   components: RawComponent[];
   formIds: string[];
+  /** Titles of the wiki's marker icons beside the name, e.g. "Cut content". */
+  markers: string[];
   /** Anything in the row the parser could not read. Non-empty means the row needs a decision. */
   problems: string[];
 }
@@ -170,6 +172,14 @@ export function parseJunkTables(html: string): RawRow[] {
           }
         }
 
+        const nameCell = cells[col("Name")];
+        const markers = nameCell
+          ? $(nameCell)
+              .find(".va-icon[title]")
+              .toArray()
+              .map((icon) => $(icon).attr("title") ?? "")
+          : [];
+
         rows.push({
           section,
           order: rows.length,
@@ -178,6 +188,7 @@ export function parseJunkTables(html: string): RawRow[] {
           weightText: text("Weight"),
           components: parsed.components,
           formIds,
+          markers,
           problems,
         });
       });

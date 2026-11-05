@@ -50,7 +50,11 @@ function guessRow(item: Item, fb: Feedback, reveal: boolean): HTMLElement {
   );
 }
 
-export function renderHistory(rows: Array<[Item, Feedback]>, revealNewest: boolean): HTMLElement {
+export function renderHistory(
+  rows: Array<[Item, Feedback]>,
+  revealNewest: boolean,
+  label = "Your guesses, newest first",
+): HTMLElement {
   const header = h(
     "div",
     { role: "row", class: "head" },
@@ -62,7 +66,7 @@ export function renderHistory(rows: Array<[Item, Feedback]>, revealNewest: boole
   const newestFirst = [...rows].reverse();
   return h(
     "div",
-    { role: "table", class: "history", "aria-label": "Your guesses, newest first" },
+    { role: "table", class: "history", "aria-label": label },
     header,
     ...newestFirst.map(([item, fb], i) => guessRow(item, fb, revealNewest && i === 0)),
   );

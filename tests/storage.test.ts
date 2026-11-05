@@ -128,8 +128,8 @@ describe("storage available", () => {
     };
     storage.saveStats(stats);
     expect(storage.loadStats()).toEqual(stats);
-    storage.saveSettings({ colorBlind: true, motion: "reduce" });
-    expect(storage.loadSettings()).toEqual({ colorBlind: true, motion: "reduce" });
+    storage.saveSettings({ colorBlind: true, motion: "reduce", helpSeen: true });
+    expect(storage.loadSettings()).toEqual({ colorBlind: true, motion: "reduce", helpSeen: true });
     expect(storage.health).toEqual({ state: "ok" });
   });
 

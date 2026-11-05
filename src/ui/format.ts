@@ -117,6 +117,13 @@ export function guessAnnouncement(guess: Item, fb: Feedback, guessesLeft: number
   );
 }
 
+/** "05:12:33" for a duration in milliseconds (rounded up, so it never shows 00:00:00 early). */
+export function formatCountdown(ms: number): string {
+  const total = Math.max(0, Math.ceil(ms / 1000));
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return `${pad(Math.floor(total / 3600))}:${pad(Math.floor((total % 3600) / 60))}:${pad(total % 60)}`;
+}
+
 /** Full stats of an item, as label/value pairs, for the end screen. */
 export function itemFacts(item: Item): Array<[string, string]> {
   return [

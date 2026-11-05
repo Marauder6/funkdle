@@ -23,6 +23,8 @@ export interface Combobox {
   input: HTMLInputElement;
   /** Re-run the search, e.g. after a guess changes what is excluded. */
   refresh(): void;
+  /** Empty the input and close the list, e.g. on a mode switch. */
+  clear(): void;
   setDisabled(disabled: boolean): void;
 }
 
@@ -142,6 +144,10 @@ export function createCombobox(opts: ComboboxOptions): Combobox {
     input,
     refresh: () => {
       if (input.value.trim()) update();
+    },
+    clear() {
+      input.value = "";
+      update();
     },
     setDisabled(disabled) {
       input.disabled = disabled;

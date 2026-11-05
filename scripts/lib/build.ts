@@ -64,6 +64,9 @@ export interface BuildResult {
   report: BuildReport;
 }
 
+/** The wiki's marker for items cut from the game; such rows are excluded (SPEC 13.10). */
+export const CUT_CONTENT = "Cut content";
+
 export class BuildError extends Error {
   constructor(readonly problems: string[]) {
     super(`data build failed with ${problems.length} problem(s):\n  ${problems.join("\n  ")}`);
@@ -149,6 +152,16 @@ export function buildDataset(
         section: raw.section,
         kind: "override",
         reason: ex.reason,
+      });
+      continue;
+    }
+    // Owner's decision 2026-11-05: items players cannot normally obtain are out of both sets.
+    if (raw.markers.includes(CUT_CONTENT)) {
+      exclusions.push({
+        name: raw.name,
+        section: raw.section,
+        kind: "rule",
+        reason: "marked cut content on the wiki (not obtainable in normal play)",
       });
       continue;
     }

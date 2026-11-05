@@ -8,6 +8,7 @@ import {
   dayNumber,
   formatCalendarDate,
   localCalendarDate,
+  msUntilNextLocalMidnight,
   parseCalendarDate,
   puzzleNumber,
   type Schedule,
@@ -83,6 +84,15 @@ describe("puzzle numbering", () => {
     const lateEvening = new Date(2026, 10, 5, 23, 30);
     expect(lateEvening.toISOString().slice(0, 10)).toBe("2026-11-06");
     expect(localCalendarDate(lateEvening)).toEqual(d("2026-11-05"));
+  });
+});
+
+describe("msUntilNextLocalMidnight", () => {
+  it("counts down to the real local midnight, on 23- and 25-hour days too", () => {
+    expect(msUntilNextLocalMidnight(new Date(2026, 10, 5, 23, 59, 30))).toBe(30_000);
+    expect(msUntilNextLocalMidnight(new Date(2026, 10, 5, 0, 0, 0))).toBe(24 * HOUR);
+    expect(msUntilNextLocalMidnight(new Date(2026, 2, 8, 0, 0, 0))).toBe(23 * HOUR);
+    expect(msUntilNextLocalMidnight(new Date(2026, 10, 1, 0, 0, 0))).toBe(25 * HOUR);
   });
 });
 

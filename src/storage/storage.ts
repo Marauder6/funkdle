@@ -5,6 +5,8 @@
 // No DOM types here: the browser adapter takes anything shaped like Storage, so this module is
 // type-checked and tested without a DOM.
 
+import { EMPTY_STATS, type Stats } from "../core/stats";
+
 export const KEY_PREFIX = "funkdle:v1:";
 
 /** The parts of the Web Storage API this module uses. */
@@ -114,33 +116,21 @@ export interface SavedUnlimited {
   guessIds: string[];
 }
 
-export interface Stats {
-  played: number;
-  wins: number;
-  currentStreak: number;
-  maxStreak: number;
-  /** Last daily puzzle whose result was counted, so a result is counted exactly once (SPEC 11, Phase 4). */
-  lastCountedPuzzle: number | null;
-  /** distribution[n - 1] = daily wins in n guesses. */
-  distribution: number[];
-}
+export { EMPTY_STATS, type Stats };
 
 export interface Settings {
   colorBlind: boolean;
   /** "system" follows prefers-reduced-motion. */
   motion: "system" | "reduce";
+  /** The help dialog has been shown once, so it no longer opens by itself. */
+  helpSeen: boolean;
 }
 
-export const EMPTY_STATS: Stats = {
-  played: 0,
-  wins: 0,
-  currentStreak: 0,
-  maxStreak: 0,
-  lastCountedPuzzle: null,
-  distribution: [],
-};
-
-export const DEFAULT_SETTINGS: Settings = { colorBlind: false, motion: "system" };
+export const DEFAULT_SETTINGS: Readonly<Settings> = Object.freeze({
+  colorBlind: false,
+  motion: "system",
+  helpSeen: false,
+});
 
 const isCount = (v: unknown): v is number => Number.isInteger(v) && (v as number) >= 0;
 const isStringArray = (v: unknown): v is string[] =>
@@ -164,7 +154,8 @@ const isStats = (v: unknown): v is Stats =>
 const isSettings = (v: unknown): v is Settings =>
   isRecord(v) &&
   typeof v.colorBlind === "boolean" &&
-  (v.motion === "system" || v.motion === "reduce");
+  (v.motion === "system" || v.motion === "reduce") &&
+  typeof v.helpSeen === "boolean";
 
 /** Typed access to everything the game saves. */
 export class GameStorage {
