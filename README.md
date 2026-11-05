@@ -6,7 +6,8 @@ component counts and origin (base game, Far Harbor, Nuka-World) compare with the
 until you find it. Fan-made: not affiliated with or endorsed by Bethesda Softworks or ZeniMax
 Media. Fallout is a trademark of ZeniMax Media.
 
-Status: in development.
+Play it at **https://marauder6.github.io/funkdle/**. Every push to `main` that passes the checks
+is deployed there by `.github/workflows/deploy.yml`.
 
 ## Run it
 
